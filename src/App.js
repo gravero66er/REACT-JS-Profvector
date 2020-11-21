@@ -1,26 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./styles/App.scss";
+import { BrwoserRouter as Router, Switch, Route } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import BlogList from "./components/Blog/blog__list";
+import Header from "./components/Header/header";
+import About from "./components/About/about";
+import SliderOne from "./components/Slider__1/slider__one";
+import Team from "./components/Team/team";
+import SliderTwo from "./components/Slider__2/slider__two";
+import Feedback from "./components/Feedback/feedback";
+import SliderThree from "./components/Slider__3/slider__three";
+import BlogPlug from "./components/Blog/blog__plug";
+import Footer from "./components/Footer/footer";
 
-function App() {
+AOS.init({
+  duration: 1000,
+});
+
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <About />
+      <SliderOne />
+      <Team />
+      <SliderTwo />
+      <Feedback />
+      <SliderThree />
+      <BlogPlug />
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;

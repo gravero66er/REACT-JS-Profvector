@@ -1,0 +1,59 @@
+body {
+  min-width: 320px;
+}
+
+.App {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+@import "fonts.sass";
+@import "reset.sass";
+@import "header.scss";
+@import "about.scss";
+@import "sliders.scss";
+@import "team.scss";
+@import "feedback.scss";
+@import "spinner.scss";
+@import "footer.scss";
+@import "blog.scss";
+@import "modal.scss";
+
+.menu__button {
+  position: absolute;
+  z-index: 1;
+  width: 376px;
+  height: 67px;
+  background: #080705;
+  box-shadow: 15px 15px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 17px;
+  transition: 0.3s ease-out;
+  &:hover {
+    left: -20px;
+    cursor: pointer;
+  }
+}
+
+.menu__button p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  position: relative;
+  @media (max-width: 530px) {
+    font-size: 16px;
+  }
+}

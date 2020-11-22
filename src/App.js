@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles/App.scss";
-import { BrwoserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import BlogList from "./components/Blog/blog__list";
@@ -20,17 +20,19 @@ AOS.init({
 
 const App = () => {
   return (
-    <div className="App">
-      <Header />
-      <About />
-      <SliderOne />
-      <Team />
-      <SliderTwo />
-      <Feedback />
-      <SliderThree />
-      <BlogPlug />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Header />
+        <About />
+        <SliderOne />
+        <Team />
+        <SliderTwo />
+        <Feedback />
+        <SliderThree />
+        <BlogPlug />
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 };
 

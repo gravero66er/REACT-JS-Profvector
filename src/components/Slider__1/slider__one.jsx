@@ -1,9 +1,11 @@
 import React from "react";
 import Slider from "react-slick";
+import Alcho from "../../pages/alcho";
 import Audit from "../../pages/audit";
 import Hassp from "../../pages/hassp";
 import Instrum from "../../pages/instrum";
 import Journals from "../../pages/journals";
+import Law from "../../pages/law";
 import Passports from "../../pages/passports";
 import Ppk from "../../pages/ppk";
 import Sto from "../../pages/sto";
@@ -88,7 +90,7 @@ const SliderOne = () => {
             <div className="slider__title">
               ЛИЦЕНЗИЯ
               <br />
-              НА АЛКОГОЛЬ{" "}
+              НА АЛКОГОЛЬ
             </div>
           </div>
 
@@ -98,7 +100,7 @@ const SliderOne = () => {
           </div>
         </Slider>
       </div>
-      <Passports />
+      <Alcho />
     </>
   );
 };

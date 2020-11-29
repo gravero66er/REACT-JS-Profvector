@@ -1,10 +1,16 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import Modal from "../components/Modal/modal";
 
 export default function Journals() {
   const [modalActive, setModalActive] = useState(false);
   return (
-    <div className="container">
+    <motion.div
+      className="container"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <div className="page__wrapper">
         <div className="page">
           <div className="page__title">Журналы для общепита</div>
@@ -91,6 +97,6 @@ export default function Journals() {
         <div className="page__pic page__pic-4"></div>
       </div>
       <Modal active={modalActive} setActive={setModalActive} />
-    </div>
+    </motion.div>
   );
 }

@@ -13,6 +13,8 @@ import Feedback from "./components/Feedback/feedback";
 import SliderThree from "./components/Slider__3/slider__three";
 import BlogPlug from "./components/Blog/blog__plug";
 import Footer from "./components/Footer/footer";
+import Orders from "./pages/orders_mchs";
+import OrdersRos from "./pages/orders_ros";
 
 AOS.init({
   duration: 500,
@@ -27,8 +29,10 @@ const App = () => {
         <SliderOne />
         <Team />
         <SliderTwo />
+        <OrdersRos />
         <Feedback />
         <SliderThree />
+        <Orders />
         <BlogPlug />
         <Footer />
       </div>

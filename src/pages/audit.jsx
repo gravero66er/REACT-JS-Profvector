@@ -1,10 +1,16 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import Modal from "../components/Modal/modal";
 
 export default function Audit() {
   const [modalActive, setModalActive] = useState(false);
   return (
-    <div className="container">
+    <motion.div
+      className="container"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <div className="page__wrapper">
         <div className="page">
           <div className="page__title">Аудит предприятия</div>
@@ -147,8 +153,8 @@ export default function Audit() {
               </li>
             </ul>
           </div>
-          <br/>
-          <br/>
+          <br />
+          <br />
           <button
             className="footer__button"
             onClick={() => setModalActive(true)}
@@ -159,6 +165,6 @@ export default function Audit() {
         <div className="page__pic page__pic-1"></div>
       </div>
       <Modal active={modalActive} setActive={setModalActive} />
-    </div>
+    </motion.div>
   );
 }

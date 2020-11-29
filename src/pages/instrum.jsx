@@ -1,14 +1,22 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import Modal from "../components/Modal/modal";
 
 export default function Instrum() {
   const [modalActive, setModalActive] = useState(false);
   return (
-    <div className="container">
+    <motion.div
+      className="container"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <div className="page__wrapper">
         <div className="page">
           <div className="page__title">Инструкции для общепита</div>
-          <div className="page__lead">Стоимость: &nbsp; <span>4 000 p. &nbsp; 2 000 р.</span> </div>
+          <div className="page__lead">
+            Стоимость: &nbsp; <span>4 000 p. &nbsp; 2 000 р.</span>{" "}
+          </div>
           <div className="page__content">
             Инструкции для удобной работы персонала. Простые и понятные.
             Размещаются на рабочих местах. Даже новый сотрудник без труда в них
@@ -104,6 +112,6 @@ export default function Instrum() {
         <div className="page__pic page__pic-3"></div>
       </div>
       <Modal active={modalActive} setActive={setModalActive} />
-    </div>
+    </motion.div>
   );
 }

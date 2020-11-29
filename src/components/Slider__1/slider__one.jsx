@@ -1,16 +1,17 @@
 import React from "react";
 import Slider from "react-slick";
-import { NavLink, Switch, Route, useLocation } from "react-router-dom";
+import { NavLink, Switch, Route } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 import Alcho from "../../pages/alcho";
 import Audit from "../../pages/audit";
 import Hassp from "../../pages/hassp";
-import Instrum from "../../pages/instrum";
 import Journals from "../../pages/journals";
 import Law from "../../pages/law";
 import Passports from "../../pages/passports";
 import Ppk from "../../pages/ppk";
 import Sto from "../../pages/sto";
 import Kpasssport from "../../pages/k_passport";
+import NameLists from "../../pages/name_lists";
 
 const SliderOne = () => {
   const settings = {
@@ -20,12 +21,13 @@ const SliderOne = () => {
     infinite: true,
     autoplay: true,
     autoplaySpeed: 3000,
-    arrows: false,
+    arrows: true,
     dots: true,
     responsive: [
       {
         breakpoint: 769,
         settings: {
+          arrows: false,
           vertical: true,
           verticalSwiping: true,
           slidesToShow: 1,
@@ -77,10 +79,12 @@ const SliderOne = () => {
               <div className="slider__title">ЖУРНАЛЫ</div>
             </div>
           </NavLink>
-          <NavLink exact to="/">
+          <NavLink exact to="/name_lists">
             <div className="slider__card">
               <div className="slider__img slider__img-6"></div>
-              <div className="slider__title">ИНСТРУКЦИИ</div>
+              <div className="slider__title">
+                КОНТИНГЕНТЫ И ПОИМЕННЫЕ СПИСКИ
+              </div>
             </div>
           </NavLink>
           <NavLink exact to="/sto">
@@ -113,22 +117,40 @@ const SliderOne = () => {
           </NavLink>
         </Slider>
       </div>
-      <Switch>
-        <Route key={"/"} exact path="/" component={Hassp} />
-        <Route
-          key={"/ppk"}
-          exact
-          path="/ppk"
-          component={Ppk}
-        />
-        <Route key={"/audit"} exact path="/audit" component={Audit} />
-        <Route key={"/passports"} exact path="/passports" component={Passports} />
-        <Route key={"/journals"} exact path="/journals" component={Journals} />
-        <Route key={"/sto"} exact path="/sto" component={Sto} />
-        <Route key={"/law"} exact path="/law" component={Law} />
-        <Route key={"/alcho"} exact path="/alcho" component={Alcho} />
-        <Route key={"/k_passport"} exact path="/k_passport" component={Kpasssport} />
-      </Switch>
+      <AnimatePresence>
+        <Switch>
+          <Route key={"/"} exact path="/" component={Hassp} />
+          <Route key={"/ppk"} exact path="/ppk" component={Ppk} />
+          <Route key={"/audit"} exact path="/audit" component={Audit} />
+          <Route
+            key={"/passports"}
+            exact
+            path="/passports"
+            component={Passports}
+          />
+          <Route
+            key={"/journals"}
+            exact
+            path="/journals"
+            component={Journals}
+          />
+          <Route key={"/sto"} exact path="/sto" component={Sto} />
+          <Route key={"/law"} exact path="/law" component={Law} />
+          <Route key={"/alcho"} exact path="/alcho" component={Alcho} />
+          <Route
+            key={"/k_passport"}
+            exact
+            path="/k_passport"
+            component={Kpasssport}
+          />
+          <Route
+            key={"/name_lists"}
+            exact
+            path="/name_lists"
+            component={NameLists}
+          />
+        </Switch>
+      </AnimatePresence>
     </>
   );
 };

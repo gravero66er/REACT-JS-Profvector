@@ -15,7 +15,7 @@ import BlogPlug from "./components/Blog/blog__plug";
 import Footer from "./components/Footer/footer";
 
 AOS.init({
-  duration: 1000,
+  duration: 500,
 });
 
 const App = () => {

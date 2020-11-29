@@ -10,6 +10,7 @@ import Law from "../../pages/law";
 import Passports from "../../pages/passports";
 import Ppk from "../../pages/ppk";
 import Sto from "../../pages/sto";
+import Kpasssport from "../../pages/k_passport";
 
 const SliderOne = () => {
   const settings = {
@@ -104,7 +105,7 @@ const SliderOne = () => {
               </div>
             </div>
           </NavLink>
-          <NavLink exact to="/">
+          <NavLink exact to="/k_passport">
             <div className="slider__card">
               <div className="slider__img slider__img-10"></div>
               <div className="slider__title">КАНЦЕРОГЕННООПАСНЫЙ ПАСПОРТ</div>
@@ -126,6 +127,7 @@ const SliderOne = () => {
         <Route key={"/sto"} exact path="/sto" component={Sto} />
         <Route key={"/law"} exact path="/law" component={Law} />
         <Route key={"/alcho"} exact path="/alcho" component={Alcho} />
+        <Route key={"/k_passport"} exact path="/k_passport" component={Kpasssport} />
       </Switch>
     </>
   );

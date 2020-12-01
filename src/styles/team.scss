@@ -63,7 +63,7 @@
 .team__photo {
   width: 305px;
   height: 286px;
-  border: 10px solid #e9cc33;
+  border: 5px solid rgba(233, 204, 51, 1);
   border-radius: 50%;
   margin: 0 auto 10px;
   @media (max-width: 1170px) {
@@ -81,7 +81,7 @@
 }
 
 .team__photo-one {
-  background: url(../img/team_1.jpg) 0 -30px / cover no-repeat;
+  background: url(../img/team_1.png) 0 -50px / cover no-repeat;
 }
 .team__photo-two {
   background: url(../img/team_2.jpeg) 0 0 / cover no-repeat;

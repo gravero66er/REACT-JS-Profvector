@@ -23,9 +23,7 @@ const Team = () => {
               <div className="team__photo team__photo-one"></div>
               <div className="team__name">Копцев Артём</div>
               <div className="team__discr">
-                Директор,
-                <br />
-                врач по гигиене питания.
+                Врач по гигиене питания.
                 <br />
                 (Общий стаж работы 6 лет)
               </div>

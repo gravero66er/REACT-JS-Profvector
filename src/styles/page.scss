@@ -1,13 +1,10 @@
 .page__wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  position: relative;
 }
 
 .page {
-  position: relative;
-  padding-top: 50px;
-  width: 60%;
+  position: absolute;
+  width: 1000px;
   @media (max-width: 1000px) {
     width: 100%;
   }
@@ -30,12 +27,13 @@
   &__lead {
     font-family: Montserrat;
     font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
+    font-weight: 400;
+    font-size: 15px;
     line-height: 20px;
     color: #818180;
     margin-bottom: 20px;
     span {
+      font-weight: 600;
       position: relative;
       color: #080705;
       &::before {
@@ -53,9 +51,9 @@
   &__content {
     font-family: Montserrat;
     font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
     color: #080705;
     margin-bottom: 20px;
   }
@@ -72,56 +70,16 @@
     }
   }
   &__infograph {
-      width: 50vw;
-      height: 25vw;
-      background: url('../img/ppk.png') center/cover no-repeat;
-      @media (max-width: 680px) {
-        display: none;
-      }
+    display: none;
+    // width: 50vw;
+    // height: 25vw;
+    // background: url("../img/ppk.png") center/cover no-repeat;
+    // @media (max-width: 680px) {
+    //   display: none;
+    // }
   }
-  &__pic {
-    width: 30vw;
-    height: 30vw;
-    max-width: 390px;
-    max-height: 390px;
-    &-1 {
-      background: url(../img/slide1_3.png) center/cover no-repeat;
-    }
-    &-2 {
-      background: url(../img/slide1_2.png) center/cover no-repeat;
-    }
-    &-3 {
-      background: url(../img/slide1_6.png) center/cover no-repeat;
-    }
-    &-4 {
-      background: url(../img/slide1_5.png) center/cover no-repeat;
-    }
-    &-5 {
-      background: url(../img/slide1_1.png) center/cover no-repeat;
-    }
-    &-6 {
-      background: url(../img/slide1_7.png) center/cover no-repeat;
-    }
-    &-7 {
-      background: url(../img/slide1_8.png) center/cover no-repeat;
-    }
-    &-8 {
-      background: url(../img/slide1_9.png) center/cover no-repeat;
-    }
-    &-9 {
-      background: url(../img/slide1_10.png) center/cover no-repeat;
-    }
-    &-10 {
-      background: url(../img/slide1_6.png) center/cover no-repeat;
-    }
-    &-11 {
-      background: url(../img/slide2_1.png) center/cover no-repeat;
-    }
-    &-12 {
-      background: url(../img/slide2_2.png) center/cover no-repeat;
-    }
-    @media (max-width: 1000px) {
-      display: none;
-    }
+
+  @media (max-width: 1000px) {
+    display: none;
   }
 }

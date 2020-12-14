@@ -78,7 +78,6 @@ export default function Sto() {
             <p>ЗАКАЗАТЬ ЗВОНОК</p>
           </button>
         </div>
-        <div className="page__pic page__pic-6"></div>
       </div>
       <Modal active={modalActive} setActive={setModalActive} />
     </motion.div>

@@ -233,8 +233,7 @@ a:focus:after {
   right: -16px;
   top: -65px;
   z-index: -1;
-  background: #e9cc33;
-  box-shadow: 15px 15px 4px rgba(0, 0, 0, 0.25);
+  background: #F4CD0D;
   transition: 0.3s;
   @media (max-width: 768px) {
     display: none;
@@ -291,8 +290,7 @@ a:focus:after {
   bottom: 130px;
   width: 376px;
   height: 67px;
-  background: #e9cc33;
-  box-shadow: 15px 15px 4px rgba(0, 0, 0, 0.25);
+  background: #F4CD0D;
   text-align: center;
   display: flex;
   justify-content: flex-end;
@@ -313,7 +311,6 @@ a:focus:after {
     width: 290px;
     height: 50px;
     bottom: 63px;
-    box-shadow: none;
     font-size: 16px;
   }
 }

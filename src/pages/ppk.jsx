@@ -6,7 +6,6 @@ export default function Instr() {
   const [modalActive, setModalActive] = useState(false);
   return (
     <motion.div
-      className="container"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -100,7 +99,6 @@ export default function Instr() {
             <p>ЗАКАЗАТЬ ЗВОНОК</p>
           </button>
         </div>
-        <div className="page__pic page__pic-2"></div>
       </div>
       <Modal active={modalActive} setActive={setModalActive} />
     </motion.div>

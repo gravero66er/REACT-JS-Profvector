@@ -13,9 +13,9 @@ const Header = () => {
         speed={1000}
         slidesToShow={1}
         slidesToScroll={1}
-        infinite={true}
+        infinite={false}
         autoplay={true}
-        autoplaySpeed={3000}
+        autoplaySpeed={5000}
         arrows={false}
         dots={true}
         responsive={[
@@ -69,7 +69,7 @@ const Header = () => {
       </Slider>
       <SocialLinks />
       <button className="header__feedback" onClick={() => setModalActive(true)}>
-        ЗАКАЗАТЬ ЗВОНОК
+        ОБРАТНАЯ СВЯЗЬ
       </button>
       <Modal active={modalActive} setActive={setModalActive} />
     </div>

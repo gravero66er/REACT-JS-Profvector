@@ -18,7 +18,7 @@ const Footer = () => {
           Мы ценим ваше время, оставьте заявку на обратный звонок.
         </div>
         <button className="footer__button" onClick={() => setModalActive(true)}>
-          <p>ЗАКАЗАТЬ ЗВОНОК</p>
+          <p>ОБРАТНАЯ СВЯЗЬ</p>
         </button>
       </div>
       <div className="footer__row">
@@ -39,7 +39,7 @@ const Footer = () => {
             </div>
             <div className="footer__contacts-block">
               <div className="footer__contacts">
-                <div className="footer__phone">+7 (999) 768-98-65</div>
+                <div className="footer__phone">+7 (982) 749 41 55</div>
                 <div className="footer__email">
                   <a href="mailto:info@profvector.ru">info@profvector.ru</a>
                 </div>

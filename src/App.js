@@ -3,7 +3,6 @@ import "./styles/App.scss";
 import { BrowserRouter } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import BlogList from "./components/Blog/blog__list";
 import Header from "./components/Header/header";
 import About from "./components/About/about";
 import SliderOne from "./components/Slider__1/slider__one";

@@ -6,7 +6,6 @@ export default function Sto() {
   const [modalActive, setModalActive] = useState(false);
   return (
     <motion.div
-      className="container"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}

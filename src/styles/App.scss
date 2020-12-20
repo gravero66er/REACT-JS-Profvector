@@ -12,6 +12,7 @@ body {
   width: 80%;
   margin: 0 auto;
   position: relative;
+  overflow: visible;
 }
 
 @import "fonts.sass";
@@ -39,6 +40,9 @@ body {
   align-items: center;
   padding-right: 17px;
   transition: 0.3s ease-out;
+  @media (max-width: 375px) {
+    width: 300px;
+  }
   &:hover {
     left: -20px;
     cursor: pointer;

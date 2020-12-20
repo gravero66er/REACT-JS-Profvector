@@ -11,7 +11,7 @@ const NavBar = () => {
                 </div>
                 <BurgerMenu />
                 <div className="header__contacts">
-                    <div className="header__phone">+7 (999) 768-98-65</div>
+                    <div className="header__phone">+7 (982) 749 41 55</div>
                     <div className="header__email">
                         <a href="mailto:info@profvector.ru">info@profvector.ru</a>
                     </div>

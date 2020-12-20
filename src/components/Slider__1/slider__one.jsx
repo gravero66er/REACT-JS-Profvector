@@ -1,6 +1,11 @@
 import React from "react";
 import { NavLink, Switch, Route } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Navigation } from "swiper";
+import "swiper/swiper.scss";
+import "swiper/components/navigation/navigation.scss";
+
 import Alcho from "../../pages/alcho";
 import Audit from "../../pages/audit";
 import Hassp from "../../pages/hassp";
@@ -12,75 +17,117 @@ import Sto from "../../pages/sto";
 import Kpasssport from "../../pages/k_passport";
 import NameLists from "../../pages/name_lists";
 
+SwiperCore.use(Navigation);
+
 const SliderOne = () => {
   return (
     <div className="container">
-      <div className="slider_main__title">Роспотребнадзор</div>
+      <div id="ros" className="slider_main__title">
+        Роспотребнадзор
+      </div>
       <div className="slider">
-        <div id="ros" className="slider__one">
-          <div>
+        <Swiper 
+        breakpoints={{
+          850: {
+            direction: "vertical",
+            slidesPerView: 11,
+            spaceBetween: 15,
+          },
+          670: {
+            slidesPerView: 4,
+            spaceBetween: 5,
+          },
+          550: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          320: {
+            slidesPerView: 2,
+            spaceBetween: 5,
+          }
+        }}
+        className="slider__one">
+          <SwiperSlide>
             <NavLink exact to="/">
               <div className="slider__card">
                 <div className="slider__img slider__img-1"></div>
                 <div className="slider__title">ХАССП</div>
               </div>
             </NavLink>
+          </SwiperSlide>
+          <SwiperSlide>
             <NavLink exact to="/ppk">
               <div className="slider__card">
                 <div className="slider__img slider__img-2"></div>
                 <div className="slider__title">ППК</div>
               </div>
             </NavLink>
+          </SwiperSlide>
+          <SwiperSlide>
             <NavLink exact to="/audit">
               <div className="slider__card">
                 <div className="slider__img slider__img-3"></div>
                 <div className="slider__title">АУДИТ ПРЕДПРИЯТИЯ</div>
               </div>
             </NavLink>
+          </SwiperSlide>
+          <SwiperSlide>
             <NavLink exact to="/passports">
               <div className="slider__card">
                 <div className="slider__img slider__img-4"></div>
                 <div className="slider__title">САНИТАРНЫЕ ПАСПОРТА</div>
               </div>
             </NavLink>
+          </SwiperSlide>
+          <SwiperSlide>
             <NavLink exact to="/journals">
               <div className="slider__card">
                 <div className="slider__img slider__img-5"></div>
                 <div className="slider__title">ЖУРНАЛЫ</div>
               </div>
             </NavLink>
+          </SwiperSlide>
+          <SwiperSlide>
             <NavLink exact to="/name_lists">
               <div className="slider__card">
                 <div className="slider__img slider__img-6"></div>
                 <div className="slider__title">ПОИМЕННЫЕ СПИСКИ</div>
               </div>
             </NavLink>
+          </SwiperSlide>
+          <SwiperSlide>
             <NavLink exact to="/sto">
               <div className="slider__card">
                 <div className="slider__img slider__img-7"></div>
                 <div className="slider__title">СТО ЛТУ</div>
               </div>
             </NavLink>
+          </SwiperSlide>
+          <SwiperSlide>
             <NavLink exact to="/law">
               <div className="slider__card">
                 <div className="slider__img slider__img-8"></div>
                 <div className="slider__title">ЗАЩИТА В СУДЕ</div>
               </div>
             </NavLink>
+          </SwiperSlide>
+          <SwiperSlide>
             <NavLink exact to="/alcho">
               <div className="slider__card">
                 <div className="slider__img slider__img-9"></div>
                 <div className="slider__title">ЛИЦЕНЗИЯ НА АЛКОГОЛЬ</div>
               </div>
             </NavLink>
+          </SwiperSlide>
+          <SwiperSlide>
             <NavLink exact to="/k_passport">
               <div className="slider__card">
                 <div className="slider__img slider__img-10"></div>
-                <div className="slider__title">КАНЦЕРОГЕННООПАСНЫЙ ПАСПОРТ</div>
+                <div className="slider__title">КАНЦ. ПАСПОРТ</div>
               </div>
             </NavLink>
-          </div>
-        </div>
+          </SwiperSlide>
+        </Swiper>
         <div>
           <AnimatePresence>
             <Switch>

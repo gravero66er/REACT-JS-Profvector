@@ -43,6 +43,9 @@ const Modal = ({ active, setActive }) => {
             <div className="modal__input">
               <input type="tel" placeholder="Ваш номер телефона" name="phone"/>
             </div>
+            <div className="modal__input modal__message">
+              <input type="text" placeholder="Ваш вопрос" name="message"/>
+            </div>
             <button type="submit" className="modal__button">
               ОТПРАВИТЬ
             </button>

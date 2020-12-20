@@ -19,7 +19,7 @@ export default function Instr() {
             <br />
             Обследование организации на соблюдение санитарного законодательства.
             <br />
-            Стоимость: &nbsp; <span>от 15 000 р. &nbsp; 12 000 р.</span> <br />
+            Стоимость: &nbsp; <span>15 000 р. &nbsp; 12 000 р.</span> <br />
             Срок: 2 — 5 дней.
           </div>
           <div className="page__content">

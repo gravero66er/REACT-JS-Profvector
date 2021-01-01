@@ -24,29 +24,31 @@ const SliderOne = () => {
     <div className="container">
       <div id="ros" className="slider_main__title">
         Роспотребнадзор
+        <div className="slider__swipe"></div>
       </div>
       <div className="slider">
-        <Swiper 
-        breakpoints={{
-          850: {
-            direction: "vertical",
-            slidesPerView: 11,
-            spaceBetween: 15,
-          },
-          670: {
-            slidesPerView: 4,
-            spaceBetween: 5,
-          },
-          550: {
-            slidesPerView: 3,
-            spaceBetween: 20,
-          },
-          320: {
-            slidesPerView: 2,
-            spaceBetween: 5,
-          }
-        }}
-        className="slider__one">
+        <Swiper
+          breakpoints={{
+            850: {
+              direction: "vertical",
+              slidesPerView: 11,
+              spaceBetween: 15,
+            },
+            670: {
+              slidesPerView: 4,
+              spaceBetween: 5,
+            },
+            550: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            320: {
+              slidesPerView: 2,
+              spaceBetween: 5,
+            },
+          }}
+          className="slider__one"
+        >
           <SwiperSlide>
             <NavLink exact to="/">
               <div className="slider__card">
@@ -99,7 +101,7 @@ const SliderOne = () => {
             <NavLink exact to="/sto">
               <div className="slider__card">
                 <div className="slider__img slider__img-7"></div>
-                <div className="slider__title">СТО ЛТУ</div>
+                <div className="slider__title">СТО</div>
               </div>
             </NavLink>
           </SwiperSlide>

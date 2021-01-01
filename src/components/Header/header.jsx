@@ -13,7 +13,7 @@ const Header = () => {
         speed={1000}
         slidesToShow={1}
         slidesToScroll={1}
-        infinite={false}
+        infinite={true}
         autoplay={true}
         autoplaySpeed={5000}
         arrows={false}
@@ -67,7 +67,6 @@ const Header = () => {
           </div>
         </div>
       </Slider>
-      <SocialLinks />
       <button className="header__feedback" onClick={() => setModalActive(true)}>
         ОБРАТНАЯ СВЯЗЬ
       </button>

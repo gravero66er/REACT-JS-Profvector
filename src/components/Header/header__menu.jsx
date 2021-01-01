@@ -32,48 +32,48 @@ const HeaderMenu = ({ open }) => {
         >
           РОСПОТРЕБНАДЗОР
         </div>
-        <Link activeClass="active" to="prot" {...settings}>
+        <Link activeсlass="active" to="prot" {...settings}>
           <div className="menu__item">ОХРАНА ТРУДА</div>
         </Link>
-        <Link activeClass="active" to="mchs" {...settings}>
-          <div activeClass="active" className="menu__item">
+        <Link activeсlass="active" to="mchs" {...settings}>
+          <div activeсlass="active" className="menu__item">
             МЧС
           </div>
         </Link>
-        <Link activeClass="active" to="blog" {...settings}>
+        <Link activeсlass="active" to="blog" {...settings}>
           <div className="menu__item">БЛОГ</div>
         </Link>
       </div>
       <Drop className="drop__menu" open={dropOne}>
         <ul className="drop__list">
-          <Link activeClass="active" to="ros" {...settings}>
+          <Link activeсlass="active" to="ros" {...settings}>
             <li className="drop__item">ХАССП</li>
           </Link>
-          <Link activeClass="active" to="ros" {...settings}>
+          <Link activeсlass="active" to="ros" {...settings}>
             <li className="drop__item">ППК</li>
           </Link>
-          <Link activeClass="active" to="ros" {...settings}>
+          <Link activeсlass="active" to="ros" {...settings}>
             <li className="drop__item">АУДИТ</li>
           </Link>
-          <Link activeClass="active" to="ros" {...settings}>
+          <Link activeсlass="active" to="ros" {...settings}>
             <li className="drop__item">САНИТАРНЫЕ ПАСПОРТА</li>
           </Link>
-          <Link activeClass="active" to="ros" {...settings}>
+          <Link activeсlass="active" to="ros" {...settings}>
             <li className="drop__item">ЖУРНАЛЫ</li>
           </Link>
-          <Link activeClass="active" to="ros" {...settings}>
+          <Link activeсlass="active" to="ros" {...settings}>
             <li className="drop__item">ПОИМЕННЫЕ СПИСКИ</li>
           </Link>
-          <Link activeClass="active" to="ros" {...settings}>
+          <Link activeсlass="active" to="ros" {...settings}>
             <li className="drop__item">СТО ЛТУ</li>
           </Link>
-          <Link activeClass="active" to="ros" {...settings}>
+          <Link activeсlass="active" to="ros" {...settings}>
             <li className="drop__item">ЗАЩИТА В СУДЕ</li>
           </Link>
-          <Link activeClass="active" to="ros" {...settings}>
+          <Link activeсlass="active" to="ros" {...settings}>
             <li className="drop__item">ЛИЦЕНЗИЯ НА АЛКОГОЛЬ</li>
           </Link>
-          <Link activeClass="active" to="ros" {...settings}>
+          <Link activeсlass="active" to="ros" {...settings}>
             <li className="drop__item">КАНЦЕРОГЕННООПАСНЫЙ ПАСПОРТ</li>
           </Link>
         </ul>

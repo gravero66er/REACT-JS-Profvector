@@ -97,13 +97,11 @@ const Feedback = () => {
             <div className="feedback__author">И.П. Козьмаев С.З.</div>
           </div>
         </div>
-
-        <div className="line"></div>
       </div>
       <Link activeClass="active" to="main" {...settings}>
-        <div className="menu__button">
+        {/* <div className="menu__button">
           <p>ГЛАВНОЕ МЕНЮ</p>
-        </div>
+        </div> */}
       </Link>
     </div>
   );

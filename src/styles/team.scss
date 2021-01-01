@@ -4,12 +4,12 @@
 
 .team__row {
   width: 100%;
-  overflow: visible;
+  overflow: hidden;
 }
 
 .team__row .swiper-button-next,
 .team__row .swiper-button-prev {
-  color: rgba(233, 204, 51, 1);
+  color: #FCE762;
   top: 105px;
   display: none !important;
   @media (max-width: 1600px) {
@@ -27,7 +27,8 @@
   left: 5px;
 }
 
-.swiper-button-prev:after, .swiper-button-next:after {
+.swiper-button-prev:after,
+.swiper-button-next:after {
   font-size: 35px !important;
 }
 
@@ -73,7 +74,7 @@
 .team__photo {
   width: 230px;
   height: 210px;
-  border: 5px solid rgba(233, 204, 51, 1);
+  border: 5px solid #FCE762;
   border-radius: 50%;
   margin-bottom: 10px;
   @media (max-width: 1150px) {
@@ -87,7 +88,10 @@
 }
 
 .team__photo-one {
-  background: url(../img/team_1.png) 0px -30px / cover no-repeat;
+  background: url(../img/team_1.png) -20px -40px / 250px no-repeat;
+  @media (max-width: 1150px) {
+    background-position: -35px -40px;
+  }
 }
 .team__photo-two {
   background: url(../img/team_2.jpeg) 0 0 / cover no-repeat;
@@ -108,7 +112,7 @@
   font-weight: bold;
   font-size: 24px;
   line-height: 28px;
-  color: #080705;
+  color: #201335;
   margin-bottom: 10px;
   @media (max-width: 950px) {
     font-size: 18px;
@@ -122,63 +126,45 @@
   font-size: 15px;
   line-height: 20px;
   text-align: center;
-  color: #080705;
+  color: #201335;
   @media (max-width: 950px) {
     font-size: 12px;
   }
 }
 
-.team__info {
-  margin: 30px auto;
-  max-width: 400px;
-  padding: 40px 20px;
-  background: #f4cd0d;
-  align-items: top;
-  @media (max-width: 1000px) {
-    flex-direction: column;
-  }
-  @media (max-width: 768px) {
-    margin: 20px auto;
-  }
-}
-
-.info__title {
-  margin-bottom: 20px;
-  text-align: center;
+.team__goals-title {
+  margin: 50px auto 50px;
   font-family: Roboto Condensed;
   font-style: normal;
   font-weight: bold;
-  font-size: 30px;
-  line-height: 35px;
-  color: #080705;
-}
-
-.info__content {
-  margin: 0 auto;
-  padding: 0 10px;
-  font-family: Montserrat;
-  font-style: normal;
+  font-size: 70px;
+  line-height: 56px;
+  color: #e6e6e6;
   text-align: center;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: #080705;
+  @media (max-width: 768px) {
+    font-size: 50px;
+  }
+  @media (max-width: 550px) {
+    font-size: 28px;
+    margin: 20px 0;
+    padding-bottom: 0;
+  }
 }
 
 .team__goals {
-  margin: 90px auto 50px;
+  margin: 0 auto 50px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-row-gap: 30px;
   @media (max-width: 1480px) {
-    margin-bottom: 150px;
+    margin-bottom: 0;
   }
   @media (max-width: 1150px) {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
   @media (max-width: 678px) {
     grid-template-columns: 1fr 1fr;
-    margin: 50px auto 150px;
+    margin: 0;
   }
 }
 
@@ -236,7 +222,7 @@
 .goal__number {
   width: 90px;
   height: 90px;
-  background: #f4cd0d;
+  background: #FCE762;
   border-radius: 50%;
   text-align: center;
   font-family: Montserrat;
@@ -244,7 +230,7 @@
   font-weight: bold;
   font-size: 48px;
   line-height: 59px;
-  color: #080705;
+  color: #201335;
   padding: 16px 0;
   margin-bottom: 5px;
 }
@@ -255,7 +241,7 @@
   font-weight: bold;
   font-size: 24px;
   line-height: 28px;
-  color: #080705;
+  color: #201335;
   margin-bottom: 5px;
   @media (max-width: 870px) {
     font-size: 18px;
@@ -268,7 +254,7 @@
   font-size: 15px;
   line-height: 18px;
   text-align: center;
-  color: #080705;
+  color: #201335;
   @media (max-width: 400px) {
     font-size: 13px;
   }

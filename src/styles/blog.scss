@@ -9,19 +9,23 @@
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
-  line-height: 56px;
-  color: #080705;
+  line-height: 45px;
+  color: #201335;
   margin: 50px 70px;
+  text-align: center;
   @media (max-width: 450px) {
-    font-size: 32px;
+    font-size: 28px;
     margin: 20px 70px;
+    width: 200px;
+    line-height: 28px;
+    
   }
 }
 
 .line {
   width: 100%;
   height: 1px;
-  background-color: #080705;
+  background-color: #201335;
   @media (max-width: 425px) {
     background-color: #ffffff;
   }
@@ -56,7 +60,7 @@
   font-weight: bold;
   font-size: 28px;
   line-height: 42px;
-  color: #080705;
+  color: #201335;
 }
 
 .blog__category {
@@ -82,7 +86,7 @@
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
-  color: #080705;
+  color: #201335;
 }
 
 .blog__content:after {
@@ -109,7 +113,7 @@
 }
 .blog__arrow a {
   position: relative;
-  color: #080705 !important;
+  color: #201335 !important;
   text-decoration: none;
 }
 
@@ -120,7 +124,7 @@
   bottom: -2px; /*изменить на right:0;, чтобы изменить направление подчёркивания */
   width: 0; /*задаём длинну линии до наведения курсора*/
   height: 1px; /*задаём ширину линии*/
-  background-color: #080705; /*задаём цвет линии*/
+  background-color: #201335; /*задаём цвет линии*/
   content: "";
   transition: width 0.3s ease-out; /*задаём время анимации*/
 }
@@ -156,7 +160,7 @@ a:focus:after {
   font-size: 15px;
   line-height: 20px;
   text-align: center;
-  color: #080705;
+  color: #201335;
 }
 
 .blog__plug .blog__content:after {

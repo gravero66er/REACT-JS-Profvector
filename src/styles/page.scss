@@ -12,8 +12,8 @@
     font-weight: bold;
     font-size: 40px;
     line-height: 56px;
-    color: #080705;
-    margin-bottom: 20px;
+    color: #201335;
+    margin: 10px 0 20px;
     @media (max-width: 1000px) {
       font-size: 30px;
     }
@@ -33,7 +33,7 @@
     span {
       font-weight: 600;
       position: relative;
-      color: #080705;
+      color: #201335;
       &::before {
         position: absolute;
         content: "";
@@ -52,7 +52,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
-    color: #080705;
+    color: #201335;
     margin-bottom: 20px;
   }
   &__subtitle {

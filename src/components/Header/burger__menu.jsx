@@ -3,6 +3,7 @@ import styled from "styled-components";
 import HeaderMenu from "./header__menu";
 
 const Burger = styled.div`
+  transform: ${({ open }) => (open ? "translateX(-7px)" : "translateX(0)")};
   div {
     &:nth-child(1) {
       transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0deg)")};

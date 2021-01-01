@@ -87,7 +87,7 @@ const Team = () => {
           <div className="swiper-button-next"></div>
           <div className="swiper-button-prev"></div>
         </Swiper>
-        <div className="team__info">
+        {/* <div className="team__info">
           <div className="info__title">Наши принципы</div>
           <div className="info__content">
             <strong>Ответственность.</strong>
@@ -117,6 +117,11 @@ const Team = () => {
               работать без штрафов!
             </div>
           </div> */}
+        {/* </div> */}
+        <div className="block__title">
+          <div className="line"></div>
+          <div className="title">Этапы работы</div>
+          <div className="line"></div>
         </div>
         <div className="team__goals">
           <div className="goal__item goal__item-one">
@@ -149,9 +154,9 @@ const Team = () => {
         </div>
       </div>
       <Link activeClass="active" to="main" {...settings}>
-        <div className="menu__button">
+        {/* <div className="menu__button">
           <p>ГЛАВНОЕ МЕНЮ</p>
-        </div>
+        </div> */}
       </Link>
     </div>
   );

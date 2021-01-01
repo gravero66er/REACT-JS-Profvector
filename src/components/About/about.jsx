@@ -49,7 +49,7 @@ const About = () => {
       <div className="about__square">
         <div className="square__content">
           <div className="square__img" data-aos="fade-left"></div>
-          <Link activeClass="active" to="ros" {...settings}>
+          {/* <Link activeClass="active" to="ros" {...settings}>
             <div className="square__button square__button-l">
               <p>Роспотребнадзор</p>
             </div>
@@ -63,7 +63,7 @@ const About = () => {
             <div className="square__button square__button-s">
               <p>МЧС</p>
             </div>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>

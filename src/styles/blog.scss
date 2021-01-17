@@ -5,25 +5,25 @@
 }
 
 .title {
+  width: 33%;
   font-family: Roboto Condensed;
   font-style: normal;
   font-weight: bold;
-  font-size: 48px;
+  font-size: 40px;
   line-height: 45px;
   color: #201335;
-  margin: 50px 70px;
+  margin: 50px 20px;
   text-align: center;
   @media (max-width: 450px) {
     font-size: 28px;
-    margin: 20px 70px;
-    width: 200px;
+    margin: 20px 20px;
     line-height: 28px;
     
   }
 }
 
 .line {
-  width: 100%;
+  width: 20vw;
   height: 1px;
   background-color: #201335;
   @media (max-width: 425px) {
@@ -135,11 +135,6 @@ a:focus:after {
 }
 
 // ============================= Slider
-
-.slick-list {
-  width: 1280px;
-  margin: 0 auto;
-}
 
 .blog__plug {
   margin: 0 auto;

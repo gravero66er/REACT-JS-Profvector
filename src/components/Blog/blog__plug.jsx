@@ -14,7 +14,6 @@ const BlogPlug = () => {
                 <div className="blog__title">Loading...</div>
                 <div className="blog__content">Совсем скоро здесь появится информативный блог, в котором мы подробно будем рассказывать про нашу работу.</div>
             </div>
-            <div className='line'></div>
         </div>
     );
 }

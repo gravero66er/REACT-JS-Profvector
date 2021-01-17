@@ -1,13 +1,6 @@
 import React, { useState } from "react";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 import Modal from '../Modal/modal';
-
-const settings = {
-  spy: true,
-  smooth: true,
-  offset: -20,
-  duration: 800
-};
 
 const Footer = () => {
   const [modalActive, setModalActive] = useState(false)
@@ -24,7 +17,7 @@ const Footer = () => {
       <div className="footer__row">
         <div className="container">
           <div className="footer__wrapper">
-            <Link activeClass="active" to="main" {...settings}>
+            <Link to={"/"}>
               <div className="footer__menu-button">
                 <div>ГЛАВНОЕ МЕНЮ</div>
               </div>

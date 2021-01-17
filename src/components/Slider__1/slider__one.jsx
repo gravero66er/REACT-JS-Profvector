@@ -24,7 +24,6 @@ const SliderOne = () => {
     <div className="container">
       <div id="ros" className="slider_main__title">
         Роспотребнадзор
-        <div className="slider__swipe"></div>
       </div>
       <div className="slider">
         <Swiper

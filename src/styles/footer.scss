@@ -26,22 +26,6 @@
   }
 }
 
-.footer__content::after {
-  content: "";
-  width: 40px;
-  height: 40px;
-  bottom: 0;
-  left: 130px;
-  position: absolute;
-  background: url(../img/arrow.png) center/cover no-repeat;
-  @media (max-width: 900px) {
-    transform: rotate(90deg);
-    left: 70px;
-  }
-  @media (max-width: 470px) {
-    display: none;
-  }
-}
 
 .footer__button {
   width: 305px;

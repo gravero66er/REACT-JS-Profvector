@@ -8,6 +8,8 @@ const settings = {
   duration: 800
 };
 
+// Settings for react-scroll
+
 const Feedback = () => {
   return (
     <div className="feedback">

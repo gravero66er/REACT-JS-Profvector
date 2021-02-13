@@ -13,9 +13,7 @@ export default function Journals() {
       <div className="page__wrapper">
         <div className="page">
           <div className="page__title">Журналы для общепита</div>
-          <div className="page__lead">
-            Стоимость: &nbsp; <span>4 000 p. &nbsp; 2 000 р.</span>{" "}
-          </div>
+          <div className="page__lead">Стоимость: 2 000 р.</div>
           <div className="page__content">
             Журналы приобретаются один раз и пригодны для постоянного
             использования. Разработаны в соответствии с требованиями санитарных
@@ -34,10 +32,7 @@ export default function Journals() {
                 - журнал учета проверок юридического лица;
               </li>
               <li className="page__item">- журнал аварийных ситуаций;</li>
-              <li className="page__item">- журнал здоровья;</li>
-              <li className="page__item">
-                - журнал осмотра рук на гнойничковые заболевания;
-              </li>
+              <li className="page__item">- гигиенический журнал (журнал здоровья + осмотра рук на гнойничковые заболевания);</li>
               <li className="page__item">- бракеражный журнал;</li>
               <li className="page__item">- санитарный журнал;</li>
               <li className="page__item">
@@ -80,8 +75,20 @@ export default function Journals() {
                 - журнал регистрации измерения температуры сотрудников;
               </li>
               <li className="page__item">
-                - журнал учета дезинфекции и дератизации;
+                - журнал учета дезинфекции и дератизации.
               </li>
+            </ul>
+          </div>
+          <div className="page__subtitle">В результате:</div>
+          <div className="page__content">
+            <ul className="page__list">
+              <li className="page__item">
+                - полный комплект журналов в электронном или бумажном виде;
+              </li>
+              <li className="page__item">
+                - консультация по правильному заполнению;
+              </li>
+              <li className="page__item">- образцы заполнения.</li>
             </ul>
           </div>
           <br />
@@ -90,7 +97,7 @@ export default function Journals() {
             className="footer__button"
             onClick={() => setModalActive(true)}
           >
-            <p>ЗАКАЗАТЬ ЗВОНОК</p>
+            <p>ОСТАВИТЬ ЗАЯВКУ</p>
           </button>
         </div>
       </div>

@@ -2,11 +2,14 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import sanityClient from "../../client.js";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation } from "swiper";
+import SwiperCore, { Navigation, Autoplay } from "swiper";
 import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
 
 SwiperCore.use(Navigation);
+SwiperCore.use([Autoplay]);
+
+// Adding arrows for Swiper
 
 function Blog() {
   const [allPostsData, setAllPosts] = useState(null);
@@ -28,6 +31,8 @@ function Blog() {
       .then((data) => setAllPosts(data))
       .catch(console.error);
   }, []);
+
+  // Fetching data from Sanity.io using GROQ
 
   return (
     <div className="container">
@@ -52,6 +57,10 @@ function Blog() {
             900: {
               slidesPerView: 3,
             },
+          }}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
           }}
           spaceBetween={20}
         >

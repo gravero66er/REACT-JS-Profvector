@@ -54,6 +54,19 @@
     url(../img/mchs.jpg) center/cover;
 }
 
+.header__first-slide p,
+.header__second-slide p,
+.header__third-slide p {
+  margin: 5px 0;
+  font-size: 17px;
+}
+
+.header__first-slide span,
+.header__second-slide span,
+.header__third-slide span {
+  font-weight: bold;
+}
+
 .header__slide-title {
   width: 480px;
   height: 45px;
@@ -82,17 +95,20 @@
   border-radius: 15px;
   background-color: rgba(126, 126, 126, 0.8);
   @media (max-width: 985px) {
-    font-size: 14px;
+    font-size: 17px;
   }
   @media (max-width: 530px) {
-    font-size: 12px;
+    font-size: 17px;
     width: 360px;
     line-height: 18px;
   }
   @media (max-width: 430px) {
-    font-size: 12px;
+    font-size: 17px;
     width: 260px;
     line-height: 18px;
+  }
+  &:hover {
+    cursor: pointer;
   }
 }
 
@@ -263,7 +279,7 @@ a:focus:after {
   right: -16px;
   top: -65px;
   z-index: -1;
-  background: #FCE762;
+  background: #fce762;
   transition: 0.3s;
   @media (max-width: 768px) {
     display: none;
@@ -324,7 +340,7 @@ a:focus:after {
   bottom: 36px;
   width: 376px;
   height: 67px;
-  background: #FCE762;
+  background: #fce762;
   text-align: center;
   display: flex;
   justify-content: flex-start;
@@ -375,13 +391,13 @@ a:focus:after {
   font-weight: 400;
   line-height: 17px;
   color: #201335;
-  border-bottom: 1px solid #201335;;;
+  border-bottom: 1px solid #201335;
   transition: all 0.3s ease-in-out;
   @media (max-width: 635px) {
     font-size: 12px;
     line-height: 15px;
   }
-  
+
   &:not(:last-child) {
     margin-bottom: 10px;
   }

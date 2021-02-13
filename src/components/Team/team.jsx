@@ -1,17 +1,21 @@
 import React from "react";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation } from "swiper";
+import SwiperCore, { Navigation, Autoplay } from "swiper";
+
 import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
 
-const settings = {
-  spy: true,
-  smooth: true,
-  duration: 800,
-};
+// const settings = {
+//   spy: true,
+//   smooth: true,
+//   duration: 800,
+// };
 
 SwiperCore.use(Navigation);
+SwiperCore.use([Autoplay]);
+
+// Adding arrows for Swiper
 
 const Team = () => {
   return (
@@ -35,9 +39,13 @@ const Team = () => {
             1000: {
               slidesPerView: 3,
             },
-            800: { 
+            800: {
               slidesPerView: 2,
-            }
+            },
+          }}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
           }}
           className="team__row"
         >
@@ -153,11 +161,11 @@ const Team = () => {
           </div>
         </div>
       </div>
-      <Link activeClass="active" to="main" {...settings}>
-        {/* <div className="menu__button">
+      {/* <Link activeClass="active" to="main" {...settings}>
+        <div className="menu__button">
           <p>ГЛАВНОЕ МЕНЮ</p>
-        </div> */}
-      </Link>
+        </div>
+      </Link> */}
     </div>
   );
 };

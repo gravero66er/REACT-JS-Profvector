@@ -15,11 +15,11 @@ function Mainpage() {
       <Header />
       <About />
       <SliderOne />
-      <Team />
       <SliderTwo />
-      <Feedback />
       <SliderThree />
+      <Team />
       <Blog />
+      <Feedback />
       <Footer />
     </>
   );

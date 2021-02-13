@@ -18,50 +18,40 @@ export default function Kpasssport() {
             <br />
             Срок: от 20 рабочих дней.
           </div>
-          <div className="page__content">
-            Разработаем для Вас санитарно-гигиенический паспорт
-            канцерогеноопасной организации. Документ необходим предприятиям, в
-            которой работники могут подвергнуться воздействию канцерогенных
-            факторов. Также необходим, если существует опасность загрязнения
-            окружающей среды канцерогенами. Разрабатываются профилактические
-            мероприятия.
-          </div>
+          <div className="page__content"></div>
+          <div className="page__subtitle">Для кого:</div>
+          <div className="page__content"></div>
           <div className="page__subtitle"></div>
           <div className="page__content">
-            Требования и основания для разработки является СанПиН 1.2.2353-08
-            «Канцерогенные факторы и основные требования к профилактике
-            канцерогенной опасности».
-          </div>
-          <div className="page__subtitle"></div>
-          <div className="page__content">
-            Паспорт в первую очередь необходим производствам:
             <ul className="page__list">
-              <li className="page__item">- металлообрабатывающим;</li>
-              <li className="page__item">- угольным;</li>
-              <li className="page__item">- коксовым;</li>
-              <li className="page__item">- деревообрабатывающим;</li>
-              <li className="page__item">- горнодобывающим;</li>
-              <li className="page__item">- нефтеперерабатывающим;</li>
-              <li className="page__item">- химическим;</li>
-              <li className="page__item">- и др.</li>
+              <li className="page__item">
+                - предприятиям, в которой работники могут подвергнуться
+                воздействию канцерогенных факторов;
+              </li>
+              <li className="page__item">
+                - предприятиям с вероятностью загрязнения окружающей среды
+                канцерогенами.
+              </li>
             </ul>
           </div>
+          <div className="page__content"></div>
+          <div className="page__subtitle">В результате:</div>
           <div className="page__content">
-            Срок действия паспорта 5 лет, либо подлежит переоформлению по
-            причинам:
-          </div>
-          <div className="page__subtitle"></div>
-          <div className="page__content">
-            Паспорт в первую очередь необходим производствам:
             <ul className="page__list">
-              <li className="page__item">- при реконструкции предприятия;</li>
               <li className="page__item">
-                - при изменении технологического процесса;
+                - разработаем санитарно-гигиенический паспорт канцерогеноопасной
+                организации;
+              </li>
+              <li className="page__item">
+                - консультация по работе с документом.
               </li>
               <li className="page__item">
                 - по предписанию органов Роспотребнадзора.
               </li>
             </ul>
+            Основанием для разработки паспорта является СанПиН 1.2.2353-08
+            «Канцерогенные факторы и основные требования к профилактике
+            канцерогенной опасности».
           </div>
           <br />
           <br />
@@ -69,7 +59,7 @@ export default function Kpasssport() {
             className="footer__button"
             onClick={() => setModalActive(true)}
           >
-            <p>ЗАКАЗАТЬ ЗВОНОК</p>
+            <p>ОСТАВИТЬ ЗАЯВКУ</p>
           </button>
         </div>
       </div>

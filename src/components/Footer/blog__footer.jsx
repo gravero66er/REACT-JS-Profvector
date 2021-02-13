@@ -11,7 +11,7 @@ const Footer = () => {
           Мы ценим ваше время, оставьте заявку на обратный звонок.
         </div>
         <button className="footer__button" onClick={() => setModalActive(true)}>
-          <p>ОБРАТНАЯ СВЯЗЬ</p>
+          <p>ОСТАВИТЬ ЗАЯВКУ</p>
         </button>
       </div>
       <div className="footer__row">

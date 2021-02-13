@@ -11,13 +11,17 @@ import Audit from "../../pages/audit";
 import Hassp from "../../pages/hassp";
 import Journals from "../../pages/journals";
 import Law from "../../pages/law";
-import Passports from "../../pages/passports";
 import Ppk from "../../pages/ppk";
 import Sto from "../../pages/sto";
 import Kpasssport from "../../pages/k_passport";
 import NameLists from "../../pages/name_lists";
+import Instruction from "../../pages/instruction";
+import Projects from "../../pages/projects";
+import Ready from "../../pages/ready";
 
 SwiperCore.use(Navigation);
+
+// Adding arrows for Swiper
 
 const SliderOne = () => {
   return (
@@ -27,11 +31,16 @@ const SliderOne = () => {
       </div>
       <div className="slider">
         <Swiper
+          navigation={{
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          }}
           breakpoints={{
             850: {
               direction: "vertical",
               slidesPerView: 11,
               spaceBetween: 15,
+              autoplay: false,
             },
             670: {
               slidesPerView: 4,
@@ -45,6 +54,10 @@ const SliderOne = () => {
               slidesPerView: 2,
               spaceBetween: 5,
             },
+          }}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
           }}
           className="slider__one"
         >
@@ -60,7 +73,9 @@ const SliderOne = () => {
             <NavLink exact to="/ppk">
               <div className="slider__card">
                 <div className="slider__img slider__img-2"></div>
-                <div className="slider__title">ППК</div>
+                <div className="slider__title">
+                  ПРОГРАММА ПРОИЗВОД. КОНТРОЛЯ
+                </div>
               </div>
             </NavLink>
           </SwiperSlide>
@@ -68,15 +83,9 @@ const SliderOne = () => {
             <NavLink exact to="/audit">
               <div className="slider__card">
                 <div className="slider__img slider__img-3"></div>
-                <div className="slider__title">АУДИТ ПРЕДПРИЯТИЯ</div>
-              </div>
-            </NavLink>
-          </SwiperSlide>
-          <SwiperSlide>
-            <NavLink exact to="/passports">
-              <div className="slider__card">
-                <div className="slider__img slider__img-4"></div>
-                <div className="slider__title">САНИТАРНЫЕ ПАСПОРТА</div>
+                <div className="slider__title">
+                  АУДИТ <br /> ПРЕДПРИЯТИЯ
+                </div>
               </div>
             </NavLink>
           </SwiperSlide>
@@ -89,10 +98,10 @@ const SliderOne = () => {
             </NavLink>
           </SwiperSlide>
           <SwiperSlide>
-            <NavLink exact to="/name_lists">
+            <NavLink exact to="/instruction">
               <div className="slider__card">
-                <div className="slider__img slider__img-6"></div>
-                <div className="slider__title">ПОИМЕННЫЕ СПИСКИ</div>
+                <div className="slider__img slider__img-15"></div>
+                <div className="slider__title">ИНСТРУКЦИИ</div>
               </div>
             </NavLink>
           </SwiperSlide>
@@ -100,7 +109,7 @@ const SliderOne = () => {
             <NavLink exact to="/sto">
               <div className="slider__card">
                 <div className="slider__img slider__img-7"></div>
-                <div className="slider__title">СТО</div>
+                <div className="slider__title">СТАНДАРТ ОРГАНИЗАЦИИ</div>
               </div>
             </NavLink>
           </SwiperSlide>
@@ -109,6 +118,16 @@ const SliderOne = () => {
               <div className="slider__card">
                 <div className="slider__img slider__img-8"></div>
                 <div className="slider__title">ЗАЩИТА В СУДЕ</div>
+              </div>
+            </NavLink>
+          </SwiperSlide>
+          <SwiperSlide>
+            <NavLink exact to="/name_lists">
+              <div className="slider__card">
+                <div className="slider__img slider__img-6"></div>
+                <div className="slider__title">
+                  ПОИМЕННЫЕ <br /> СПИСКИ
+                </div>
               </div>
             </NavLink>
           </SwiperSlide>
@@ -128,7 +147,25 @@ const SliderOne = () => {
               </div>
             </NavLink>
           </SwiperSlide>
+          <SwiperSlide>
+            <NavLink exact to="/projects">
+              <div className="slider__card">
+                <div className="slider__img slider__img-16"></div>
+                <div className="slider__title">ПРОЕКТИРОВАНИЕ</div>
+              </div>
+            </NavLink>
+          </SwiperSlide>
+          <SwiperSlide>
+            <NavLink exact to="/ready">
+              <div className="slider__card">
+                <div className="slider__img slider__img-17"></div>
+                <div className="slider__title">СДАЧА ПРОБ</div>
+              </div>
+            </NavLink>
+          </SwiperSlide>
         </Swiper>
+        <div className="swiper-button-next"></div>
+        <div className="swiper-button-prev"></div>
         <div>
           <AnimatePresence>
             <Switch>
@@ -136,10 +173,10 @@ const SliderOne = () => {
               <Route key={"/ppk"} exact path="/ppk" component={Ppk} />
               <Route key={"/audit"} exact path="/audit" component={Audit} />
               <Route
-                key={"/passports"}
+                key={"/instruction"}
                 exact
-                path="/passports"
-                component={Passports}
+                path="/instruction"
+                component={Instruction}
               />
               <Route
                 key={"/journals"}
@@ -162,6 +199,13 @@ const SliderOne = () => {
                 path="/name_lists"
                 component={NameLists}
               />
+              <Route
+                key={"/projects"}
+                exact
+                path="/projects"
+                component={Projects}
+              />
+              <Route key={"/ready"} exact path="/ready" component={Ready} />
             </Switch>
           </AnimatePresence>
         </div>

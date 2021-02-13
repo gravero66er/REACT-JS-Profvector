@@ -13,6 +13,8 @@ const Drop = styled.div`
   transform: ${({ open }) => (open ? "translateX(0)" : "translateX(400%)")};
 `;
 
+// Styled-components for dropout menu
+
 const settings = {
   spy: true,
   smooth: true,

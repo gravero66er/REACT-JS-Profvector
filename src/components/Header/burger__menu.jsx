@@ -23,6 +23,8 @@ const Burger = styled.div`
   }
 `;
 
+// Styled-components for burger animation
+
 const BurgerMenu = () => {
   const [open, setOpen] = useState(false);
 

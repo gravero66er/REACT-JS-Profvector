@@ -1,8 +1,15 @@
 import React, { useState } from "react";
 import Slider from "react-slick";
 import NavBar from "./nav__bar";
-import SocialLinks from "./social__links";
 import Modal from "../Modal/modal";
+import { Link } from "react-scroll";
+
+const settings = {
+  spy: true,
+  smooth: true,
+  offset: -50,
+  duration: 800,
+};
 
 const Header = () => {
   const [modalActive, setModalActive] = useState(false);
@@ -22,53 +29,66 @@ const Header = () => {
           {
             breakpoint: 768,
             settings: {
-              dots: false
-            }
-          }
+              dots: false,
+            },
+          },
         ]}
       >
+        {/* Here we using Slick-slider not Swiper */}
+
         <div className="header__first-slide">
           <div className="container">
-            <div className="header__slide-title">ХАССП</div>
-            <div className="header__slide-content">
-              Система ХАССП объединила санитарные правила для общепита вместе.
-              Журналы, инструкции, описание производства и т.д. При правильной
-              работе системы организация выпускает безопасную продукцию. Риск
-              отравления отсутствует. Требования Роспотребнадзора соблюдаются.
-              Для внедрения системы ХАССП нам потребуется: меню, список
-              помещений и оборудования. Документация разрабатывается под Ваше
-              производство. Обучим сотрудником работать по системе.
-            </div>
+            <Link activeсlass="active" to="ros" {...settings}>
+              <div className="header__slide-title">ХАССП</div>
+              <div className="header__slide-content">
+                Разработка, внедрение системы ХАССП. Обучение.
+                <p>
+                  <span>Стоимость:</span> 40 т.р.
+                </p>
+                <p>
+                  <span>Срок:</span> от 1 до 4 недель
+                </p>
+              </div>
+            </Link>
           </div>
         </div>
         <div className="header__second-slide">
           <div className="container">
-            <div className="header__slide-title">Охрана труда</div>
-            <div className="header__slide-content">
-              Важным вопросом является охрана труда персонала. Разрабатываем для
-              Вашей организации: инструкции, приказы, протоколы, программы.
-              Научим заполнять журналы по охране труда. Организуем проведение
-              специальной оценки условий труда (СОУТ). Консультационная помощь
-              при проверках. Защита Вашей организации.
-            </div>
+            <Link activeсlass="active" to="prot" {...settings}>
+              <div className="header__slide-title">РОСТРУД</div>
+              <div className="header__slide-content">
+                Разработка инструкций, приказов, журналов по охране труда.
+                Помощь при проверках.
+                <p>
+                  <span>Стоимость:</span> от 5 т.р.
+                </p>
+                <p>
+                  <span>Срок:</span> от 1 дня
+                </p>
+              </div>
+            </Link>
           </div>
         </div>
         <div className="header__third-slide">
           <div className="container">
-            <div className="header__slide-title">МЧС</div>
-            <div className="header__slide-content">
-              Наши сотрудники помогают решить вопросы по пожарной безопасности.
-              Ваш объект будет готов к проверке. Осматриваем помещения. Выявляем
-              нарушения. Совместно устраняем недостатки. Разрабатываем
-              документацию по пожарной безопасности: приказы, инструкции,
-              журналы. Даём рекомендации для правильного заполнения. Помощь при
-              открытии предприятия и при проверке госоргана.
-            </div>
+            <Link activeсlass="active" to="mchs" {...settings}>
+              <div className="header__slide-title">МЧС</div>
+              <div className="header__slide-content">
+                Разработка документов по организации противопожарного режима.
+                Помощь при проверках. Устранение нарушений.
+                <p>
+                  <span>Стоимость:</span> от 5 т.р.
+                </p>
+                <p>
+                  <span>Срок:</span> от 1 дня
+                </p>
+              </div>
+            </Link>
           </div>
         </div>
       </Slider>
       <button className="header__feedback" onClick={() => setModalActive(true)}>
-        ОБРАТНАЯ СВЯЗЬ
+        ОСТАВИТЬ ЗАЯВКУ
       </button>
       <Modal active={modalActive} setActive={setModalActive} />
     </div>

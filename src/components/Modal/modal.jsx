@@ -25,7 +25,11 @@ const Modal = ({ active, setActive }) => {
     e.target.reset();
   };
 
+  // Email.Js for sending forms
+
   const notify = () => toast("СООБЩЕНИЕ ОТПРАВЛЕНО!");
+
+  // Notify for notifications
 
   return (
     <div

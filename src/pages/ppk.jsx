@@ -14,38 +14,17 @@ export default function Instr() {
         <div className="page">
           <div className="page__title">Разработка ППК</div>
           <div className="page__lead">
-            (с графиком отбора проб, смывов с окружающей среды, физических
-            факторов и т.п.)
+            Программа производственного контроля
             <br />
-            Обследование организации на соблюдение санитарного законодательства.
+            Стоимость: 10 000 р.
             <br />
-            Стоимость: &nbsp; <span>15 000 р. &nbsp; 12 000 р.</span> <br />
             Срок: 2 — 5 дней.
           </div>
-          <div className="page__content">
-            ППК разрабатывают юр. лица и индивидуальные предприниматели до
-            начала осуществления деятельности. Программа производственного
-            контроля не имеет ограничения срока действия. Необходимо только
-            вовремя вносить изменения:
-            <ul className="page__list">
-              <li className="page__item">
-                - если произошли изменения в действующем санитарном
-                законодательстве;
-              </li>
-              <li className="page__item">
-                - если происходят изменения в работе предприятия (изменение
-                технологии производства, изменение штатной структуры, изменение
-                ассортимента продукции), влияющие на
-                санитарно-эпидемиологическую обстановку.
-              </li>
-            </ul>
-          </div>
-          <div className="page__subtitle">Кому необходимо?</div>
+          <div className="page__subtitle">Для кого:</div>
           <div className="page__content">
             <ul className="page__list">
-              <li className="page__item">- предприятиям торговли;</li>
               <li className="page__item">
-                - предприятиям общественного питания;
+                - предприятиям торговли и общественного питания;
               </li>
               <li className="page__item">- медицинским учреждениям;</li>
               <li className="page__item">- детским садам, школам;</li>
@@ -56,29 +35,11 @@ export default function Instr() {
                 - парикмахерским и салонам красоты;
               </li>
               <li className="page__item">- аптекам;</li>
-              <li className="page__item">- производствам;</li>
-              <li className="page__item">- и т.д.</li>
             </ul>
           </div>
-          <div className="page__subtitle">Для чего ППК?</div>
-          <div className="page__content">
-            Согласно ППК проводятся лабораторные и инструментальные испытания,
-            осуществляется дератизацию и дезинсекцию, проводятся медосмотры
-            персонала.
-            <br />
-            ППК обязательный пункт при проведении проверки Роспотребнадзора. За
-            отсутствие программы составляется протокол об административном
-            правонарушении.
-          </div>
-          <div className="page__infograph"></div>
-          <div className="page__content">
-            Наши сотрудники разработают для Вас индивидуальную программу
-            производственного контроля и ответят на вопросы.
-          </div>
-          <div className="page__subtitle">Для разработки ППК потребуется:</div>
+          <div className="page__subtitle">От Вас:</div>
           <div className="page__content">
             <ul className="page__list">
-              <li className="page__item">- требования к размещению;</li>
               <li className="page__item">- карточка предприятия;</li>
               <li className="page__item">- ассортиментный перечень;</li>
               <li className="page__item">- штатное расписание;</li>
@@ -86,9 +47,21 @@ export default function Instr() {
                 - список производственного оборудования.
               </li>
             </ul>
-            <br />
-            Стоимость рассчитывается от штата компании, площади, сложности тех.
-            процесса.
+          </div>
+          <div className="page__subtitle">В результате:</div>
+          <div className="page__content">
+            <ul className="page__list">
+              <li className="page__item">
+                - готовая ППК с графиком отбора проб, смывов с окружающей среды,
+                физических факторов;
+              </li>
+              <li className="page__item">
+                - консультации по работе с документом;
+              </li>
+              <li className="page__item">
+                - отсутствие штрафов со стороны контролирующих органов.
+              </li>
+            </ul>
           </div>
           <br />
           <br />
@@ -96,7 +69,7 @@ export default function Instr() {
             className="footer__button"
             onClick={() => setModalActive(true)}
           >
-            <p>ЗАКАЗАТЬ ЗВОНОК</p>
+            <p>ОСТАВИТЬ ЗАЯВКУ</p>
           </button>
         </div>
       </div>

@@ -11,6 +11,8 @@ function urlFor(source) {
   return builder.image(source);
 }
 
+// Adding image builder from Sanity.io
+
 function Singlepost() {
   const [postData, setPostData] = useState(null);
   const { slug } = useParams();
@@ -36,12 +38,17 @@ function Singlepost() {
       .catch(console.error);
   }, [slug]);
 
+  // Fetching data from Sanity.io using GROQ
+
   if (!postData)
     return (
       <div className="spinner__block">
         <Spinner />
       </div>
     );
+
+  // While data from CMS is on load or not response return Spinner
+
   return (
     <div>
       <div className="container">
@@ -55,10 +62,11 @@ function Singlepost() {
               src={urlFor(postData.mainImage).width(200).url()}
               alt={postData.title}
             />
-          </div> */}
+          </div> */} 
           <div>
             <div className="blog__author">
-              <img className="author__img"
+              <img
+                className="author__img"
                 src={urlFor(postData.authorImage).width(100).url()}
                 alt="Автор новости"
               />

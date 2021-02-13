@@ -14,7 +14,7 @@ export default function Instrum() {
         <div className="page">
           <div className="page__title">Инструкции для общепита</div>
           <div className="page__lead">
-            Стоимость: &nbsp; <span>4 000 p. &nbsp; 2 000 р.</span>{" "}
+            Стоимость: 2 000 р.
           </div>
           <div className="page__content">
             Инструкции для удобной работы персонала. Простые и понятные.
@@ -96,7 +96,7 @@ export default function Instrum() {
               </li>
               <li className="page__item">- обработка тестомесильной машины;</li>
               <li className="page__item">- инструкция мытья печи;</li>
-              <li className="page__item">- уборка туалета;</li>
+              <li className="page__item">- уборка туалета.</li>
             </ul>
           </div>
           <br />
@@ -105,7 +105,7 @@ export default function Instrum() {
             className="footer__button"
             onClick={() => setModalActive(true)}
           >
-            <p>ЗАКАЗАТЬ ЗВОНОК</p>
+            <p>ОСТАВИТЬ ЗАЯВКУ</p>
           </button>
         </div>
       </div>

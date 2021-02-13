@@ -1,5 +1,4 @@
 import React from "react";
-import HeaderMenu from "./header__menu";
 import BurgerMenu from "./burger__menu";
 
 
@@ -11,7 +10,7 @@ const NavBar = () => {
                 </div>
                 <BurgerMenu />
                 <div className="header__contacts">
-                    <div className="header__phone">+7 (982) 749 41 55</div>
+                    <a href="tel:+79827494155" className="header__phone">+7 (982) 749 41 55</a>
                     <div className="header__email">
                         <a href="mailto:info@profvector.ru">info@profvector.ru</a>
                     </div>

@@ -9,6 +9,8 @@ const settings = {
   duration: 800
 };
 
+// Settings for react-scroll
+
 const Footer = () => {
   const [modalActive, setModalActive] = useState(false)
   return (
@@ -18,7 +20,7 @@ const Footer = () => {
           Мы ценим ваше время, оставьте заявку на обратный звонок.
         </div>
         <button className="footer__button" onClick={() => setModalActive(true)}>
-          <p>ОБРАТНАЯ СВЯЗЬ</p>
+          <p>ОСТАВИТЬ ЗАЯВКУ</p>
         </button>
       </div>
       <div className="footer__row">
@@ -39,7 +41,7 @@ const Footer = () => {
             </div>
             <div className="footer__contacts-block">
               <div className="footer__contacts">
-                <div className="footer__phone">+7 (982) 749 41 55</div>
+                <a href="tel:+79827494155" className="footer__phone">+7 (982) 749 41 55</a>
                 <div className="footer__email">
                   <a href="mailto:info@profvector.ru">info@profvector.ru</a>
                 </div>

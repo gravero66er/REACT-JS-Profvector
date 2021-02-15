@@ -1,6 +1,4 @@
-import React from "react";
-import { NavLink, Switch, Route } from "react-router-dom";
-import { AnimatePresence } from "framer-motion";
+import React, { PureComponent } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation } from "swiper";
 import "swiper/swiper.scss";
@@ -19,199 +17,203 @@ import Instruction from "../../pages/instruction";
 import Projects from "../../pages/projects";
 import Ready from "../../pages/ready";
 
-SwiperCore.use(Navigation);
+class SliderOne extends PureComponent {
+  constructor(props) {
+    super(props);
 
-// Adding arrows for Swiper
+    this.state = {
+      page: <Hassp />,
+    };
+  }
 
-const SliderOne = () => {
-  return (
-    <div className="container">
-      <div id="ros" className="slider_main__title">
-        Роспотребнадзор
-      </div>
-      <div className="slider">
-        <Swiper
-          navigation={{
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          }}
-          breakpoints={{
-            850: {
-              direction: "vertical",
-              slidesPerView: 11,
-              spaceBetween: 15,
-              autoplay: false,
-            },
-            670: {
-              slidesPerView: 4,
-              spaceBetween: 5,
-            },
-            550: {
-              slidesPerView: 3,
-              spaceBetween: 20,
-            },
-            320: {
-              slidesPerView: 2,
-              spaceBetween: 5,
-            },
-          }}
-          autoplay={{
-            delay: 2000,
-            disableOnInteraction: false,
-          }}
-          className="slider__one"
-        >
-          <SwiperSlide>
-            <NavLink exact to="/">
-              <div className="slider__card">
-                <div className="slider__img slider__img-1"></div>
-                <div className="slider__title">ХАССП</div>
-              </div>
-            </NavLink>
-          </SwiperSlide>
-          <SwiperSlide>
-            <NavLink exact to="/ppk">
-              <div className="slider__card">
-                <div className="slider__img slider__img-2"></div>
-                <div className="slider__title">
-                  ПРОГРАММА ПРОИЗВОД. КОНТРОЛЯ
+  handlePpk = () => {
+      this.setState({
+        page: <Ppk />
+      })
+  }
+  handleHassp = () => {
+      this.setState({
+        page: <Hassp />
+      })
+  }
+  handleAudit = () => {
+      this.setState({
+        page: <Audit />
+      })
+  }
+  handleJour = () => {
+      this.setState({
+        page: <Journals />
+      })
+  }
+  handleInstr = () => {
+      this.setState({
+        page: <Instruction />
+      })
+  }
+  handleSto = () => {
+      this.setState({
+        page: <Sto />
+      })
+  }
+  handleLaw = () => {
+      this.setState({
+        page: <Law />
+      })
+  }
+  handleName = () => {
+      this.setState({
+        page: <NameLists />
+      })
+  }
+  handleAlcho = () => {
+      this.setState({
+        page: <Alcho />
+      })
+  }
+  handlePass = () => {
+      this.setState({
+        page: <Kpasssport />
+      })
+  }
+  handleProg = () => {
+      this.setState({
+        page: <Projects />
+      })
+  }
+  handleReady = () => {
+      this.setState({
+        page: <Ready />
+      })
+  }
+
+  render() {
+    SwiperCore.use(Navigation);
+    return (
+      <>
+        <div className="container">
+          <div id="ros" className="slider_main__title">
+            Роспотребнадзор
+          </div>
+          <div className="slider">
+            <Swiper
+              navigation={{
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              }}
+              breakpoints={{
+                850: {
+                  direction: "vertical",
+                  slidesPerView: 11,
+                  spaceBetween: 15,
+                  autoplay: false,
+                },
+                670: {
+                  slidesPerView: 4,
+                  spaceBetween: 5,
+                },
+                550: {
+                  slidesPerView: 3,
+                  spaceBetween: 20,
+                },
+                320: {
+                  slidesPerView: 2,
+                  spaceBetween: 5,
+                },
+              }}
+              autoplay={{
+                delay: 2000,
+                disableOnInteraction: false,
+              }}
+              className="slider__one"
+            >
+              <SwiperSlide>
+                <div className="slider__card" onClick={this.handleHassp}>
+                  <div className="slider__img slider__img-1"></div>
+                  <div className="slider__title">ХАССП</div>
                 </div>
-              </div>
-            </NavLink>
-          </SwiperSlide>
-          <SwiperSlide>
-            <NavLink exact to="/audit">
-              <div className="slider__card">
-                <div className="slider__img slider__img-3"></div>
-                <div className="slider__title">
-                  АУДИТ <br /> ПРЕДПРИЯТИЯ
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="slider__card" onClick={this.handlePpk}>
+                  <div className="slider__img slider__img-2"></div>
+                  <div className="slider__title">
+                    ПРОГРАММА ПРОИЗВОД. КОНТРОЛЯ
+                  </div>
                 </div>
-              </div>
-            </NavLink>
-          </SwiperSlide>
-          <SwiperSlide>
-            <NavLink exact to="/journals">
-              <div className="slider__card">
-                <div className="slider__img slider__img-5"></div>
-                <div className="slider__title">ЖУРНАЛЫ</div>
-              </div>
-            </NavLink>
-          </SwiperSlide>
-          <SwiperSlide>
-            <NavLink exact to="/instruction">
-              <div className="slider__card">
-                <div className="slider__img slider__img-15"></div>
-                <div className="slider__title">ИНСТРУКЦИИ</div>
-              </div>
-            </NavLink>
-          </SwiperSlide>
-          <SwiperSlide>
-            <NavLink exact to="/sto">
-              <div className="slider__card">
-                <div className="slider__img slider__img-7"></div>
-                <div className="slider__title">СТАНДАРТ ОРГАНИЗАЦИИ</div>
-              </div>
-            </NavLink>
-          </SwiperSlide>
-          <SwiperSlide>
-            <NavLink exact to="/law">
-              <div className="slider__card">
-                <div className="slider__img slider__img-8"></div>
-                <div className="slider__title">ЗАЩИТА В СУДЕ</div>
-              </div>
-            </NavLink>
-          </SwiperSlide>
-          <SwiperSlide>
-            <NavLink exact to="/name_lists">
-              <div className="slider__card">
-                <div className="slider__img slider__img-6"></div>
-                <div className="slider__title">
-                  ПОИМЕННЫЕ <br /> СПИСКИ
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="slider__card" onClick={this.handleAudit}>
+                  <div className="slider__img slider__img-3"></div>
+                  <div className="slider__title">
+                    АУДИТ <br /> ПРЕДПРИЯТИЯ
+                  </div>
                 </div>
-              </div>
-            </NavLink>
-          </SwiperSlide>
-          <SwiperSlide>
-            <NavLink exact to="/alcho">
-              <div className="slider__card">
-                <div className="slider__img slider__img-9"></div>
-                <div className="slider__title">ЛИЦЕНЗИЯ НА АЛКОГОЛЬ</div>
-              </div>
-            </NavLink>
-          </SwiperSlide>
-          <SwiperSlide>
-            <NavLink exact to="/k_passport">
-              <div className="slider__card">
-                <div className="slider__img slider__img-10"></div>
-                <div className="slider__title">КАНЦ. ПАСПОРТ</div>
-              </div>
-            </NavLink>
-          </SwiperSlide>
-          <SwiperSlide>
-            <NavLink exact to="/projects">
-              <div className="slider__card">
-                <div className="slider__img slider__img-16"></div>
-                <div className="slider__title">ПРОЕКТИРОВАНИЕ</div>
-              </div>
-            </NavLink>
-          </SwiperSlide>
-          <SwiperSlide>
-            <NavLink exact to="/ready">
-              <div className="slider__card">
-                <div className="slider__img slider__img-17"></div>
-                <div className="slider__title">СДАЧА ПРОБ</div>
-              </div>
-            </NavLink>
-          </SwiperSlide>
-        </Swiper>
-        <div className="swiper-button-next"></div>
-        <div className="swiper-button-prev"></div>
-        <div>
-          <AnimatePresence>
-            <Switch>
-              <Route key={"/"} exact path="/" component={Hassp} />
-              <Route key={"/ppk"} exact path="/ppk" component={Ppk} />
-              <Route key={"/audit"} exact path="/audit" component={Audit} />
-              <Route
-                key={"/instruction"}
-                exact
-                path="/instruction"
-                component={Instruction}
-              />
-              <Route
-                key={"/journals"}
-                exact
-                path="/journals"
-                component={Journals}
-              />
-              <Route key={"/sto"} exact path="/sto" component={Sto} />
-              <Route key={"/law"} exact path="/law" component={Law} />
-              <Route key={"/alcho"} exact path="/alcho" component={Alcho} />
-              <Route
-                key={"/k_passport"}
-                exact
-                path="/k_passport"
-                component={Kpasssport}
-              />
-              <Route
-                key={"/name_lists"}
-                exact
-                path="/name_lists"
-                component={NameLists}
-              />
-              <Route
-                key={"/projects"}
-                exact
-                path="/projects"
-                component={Projects}
-              />
-              <Route key={"/ready"} exact path="/ready" component={Ready} />
-            </Switch>
-          </AnimatePresence>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="slider__card" onClick={this.handleJour}>
+                  <div className="slider__img slider__img-5"></div>
+                  <div className="slider__title">ЖУРНАЛЫ</div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="slider__card" onClick={this.handleInstr}>
+                  <div className="slider__img slider__img-15"></div>
+                  <div className="slider__title">ИНСТРУКЦИИ</div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="slider__card" onClick={this.handleSto}>
+                  <div className="slider__img slider__img-7"></div>
+                  <div className="slider__title">СТАНДАРТ ОРГАНИЗАЦИИ</div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="slider__card" onClick={this.handleLaw}>
+                  <div className="slider__img slider__img-8"></div>
+                  <div className="slider__title">ЗАЩИТА В СУДЕ</div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="slider__card" onClick={this.handleName}>
+                  <div className="slider__img slider__img-6"></div>
+                  <div className="slider__title">
+                    ПОИМЕННЫЕ <br /> СПИСКИ
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="slider__card" onClick={this.handleAlcho}>
+                  <div className="slider__img slider__img-9"></div>
+                  <div className="slider__title">ЛИЦЕНЗИЯ НА АЛКОГОЛЬ</div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="slider__card" onClick={this.handlePass}>
+                  <div className="slider__img slider__img-10"></div>
+                  <div className="slider__title">КАНЦ. ПАСПОРТ</div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="slider__card" onClick={this.handleProg}>
+                  <div className="slider__img slider__img-16"></div>
+                  <div className="slider__title">ПРОЕКТИРОВАНИЕ</div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="slider__card" onClick={this.handleReady}>
+                  <div className="slider__img slider__img-17"></div>
+                  <div className="slider__title">СДАЧА ПРОБ</div>
+                </div>
+              </SwiperSlide>
+            </Swiper>
+            <div className="swiper-button-next"></div>
+            <div className="swiper-button-prev"></div>
+            <div>{this.state.page}</div>
+          </div>
         </div>
-      </div>
-    </div>
-  );
-};
+      </>
+    );
+  }
+}
 
 export default SliderOne;

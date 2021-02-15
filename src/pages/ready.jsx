@@ -23,15 +23,15 @@ export default function Ready() {
           <div className="page__subtitle"></div>
           <div className="page__content">
             <ul className="page__list">
-              <li className="page__item">- отбор проб продукции;</li>
+              <li className="page__item">• отбор проб продукции;</li>
               <li className="page__item">
-                - доставка продукции до лаборатории;
+                • доставка продукции до лаборатории;
               </li>
               <li className="page__item">
-                - проведение лабораторных исследований; 
+                • проведение лабораторных исследований; 
               </li>
               <li className="page__item">
-                - передача протоколов лабораторных испытаний.
+                • передача протоколов лабораторных испытаний.
               </li>
             </ul>
           </div>

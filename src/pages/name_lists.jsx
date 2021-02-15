@@ -22,17 +22,17 @@ export default function NameLists() {
           <div className="page__content">
             Для работников:
             <ul className="page__list">
-              <li className="page__item">- пищевой промышленности;</li>
-              <li className="page__item">- общественного питания;</li>
-              <li className="page__item">- торговли;</li>
-              <li className="page__item">- медицинских организаций;</li>
-              <li className="page__item">- детских учреждений;</li>
-              <li className="page__item">- водопроводных сооружений;</li>
+              <li className="page__item">• пищевой промышленности;</li>
+              <li className="page__item">• общественного питания;</li>
+              <li className="page__item">• торговли;</li>
+              <li className="page__item">• медицинских организаций;</li>
+              <li className="page__item">• детских учреждений;</li>
+              <li className="page__item">• водопроводных сооружений;</li>
               <li className="page__item">
-                - занятых на тяжелых работах с вредными и (или) опасными
+                • занятых на тяжелых работах с вредными и (или) опасными
                 условиями труда;
               </li>
-              <li className="page__item">- и др.</li>
+              <li className="page__item">• и др.</li>
             </ul>
           </div>
           <div className="page__content">
@@ -44,13 +44,13 @@ export default function NameLists() {
           <div className="page__content">
             <ul className="page__list">
               <li className="page__item">
-                - разработанный список контингента работников по медосмотру;
+                • разработанный список контингента работников по медосмотру;
               </li>
               <li className="page__item">
-                - разработанные поименные списки, напраления;
+                • разработанные поименные списки, напраления;
               </li>
               <li className="page__item">
-                - консультации по работе с документам.
+                • консультации по работе с документам.
               </li>
             </ul>
           </div>

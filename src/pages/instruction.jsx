@@ -21,46 +21,46 @@ export default function Instruction() {
           <div className="page__subtitle">Список инструкций:</div>
           <div className="page__content">
             <ul className="page__list">
-              <li className="page__item">- инструкция по мытью рук;</li>
-              <li className="page__item">- обработка яиц;</li>
-              <li className="page__item">- обработка овощей и зелени;</li>
-              <li className="page__item">- мытье столовой посуды;</li>
-              <li className="page__item">- мытье кухонного инвентаря;</li>
+              <li className="page__item">• инструкция по мытью рук;</li>
+              <li className="page__item">• обработка яиц;</li>
+              <li className="page__item">• обработка овощей и зелени;</li>
+              <li className="page__item">• мытье столовой посуды;</li>
+              <li className="page__item">• мытье кухонного инвентаря;</li>
               <li className="page__item">
-                - сними санитарную одежду (перед туалетом);
+                • сними санитарную одежду (перед туалетом);
               </li>
               <li className="page__item">
-                - инструкция по приготовлению рабочих растворов;
+                • инструкция по приготовлению рабочих растворов;
               </li>
               <li className="page__item">
-                - обработка холодильного оборудования;
+                • обработка холодильного оборудования;
               </li>
-              <li className="page__item">- обработка щеток и ветоши;</li>
+              <li className="page__item">• обработка щеток и ветоши;</li>
               <li className="page__item">
-                - правила текущей/генеральной уборки;
+                • правила текущей/генеральной уборки;
               </li>
-              <li className="page__item">- обработка уборочного инвентаря;</li>
+              <li className="page__item">• обработка уборочного инвентаря;</li>
               <li className="page__item">
-                - обработка емкостей для пищевых отходов;
+                • обработка емкостей для пищевых отходов;
               </li>
-              <li className="page__item">- правила приёмки товара;</li>
+              <li className="page__item">• правила приёмки товара;</li>
               <li className="page__item">
-                - мытьё и обработка оборотной тары;
+                • мытьё и обработка оборотной тары;
               </li>
-              <li className="page__item">- правила личной гигиены.</li>
+              <li className="page__item">• правила личной гигиены.</li>
             </ul>
           </div>
           <div className="page__subtitle">В результате:</div>
           <div className="page__content">
             <ul className="page__list">
               <li className="page__item">
-                - полный комплект инструкций в электронном или бумажном виде;
+                • полный комплект инструкций в электронном или бумажном виде;
               </li>
               <li className="page__item">
-                - консультация по правильному размещению;
+                • консультация по правильному размещению;
               </li>
               <li className="page__item">
-                - возможность дополнительно разработать необходимые инструкции.
+                • возможность дополнительно разработать необходимые инструкции.
               </li>
             </ul>
           </div>

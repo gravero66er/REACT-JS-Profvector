@@ -18,7 +18,7 @@ const Drop = styled.div`
 const settings = {
   spy: true,
   smooth: true,
-  offset: -50,
+  offset: -20,
   duration: 800,
 };
 

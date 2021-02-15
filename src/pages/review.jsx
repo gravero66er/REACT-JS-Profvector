@@ -17,12 +17,12 @@ export default function Review() {
           <div className="page__subtitle">Для предприятий:</div>
           <div className="page__content">
             <ul className="page__list">
-              <li className="page__item">- заводы, фабрики, производства;</li>
+              <li className="page__item">• заводы, фабрики, производства;</li>
               <li className="page__item">
-                - кафе, рестораны, продовольственные магазины;
+                • кафе, рестораны, продовольственные магазины;
               </li>
               <li className="page__item">
-                - садики, школы, лпу, стоматологии.
+                • садики, школы, лпу, стоматологии.
               </li>
             </ul>
           </div>
@@ -30,16 +30,16 @@ export default function Review() {
           <div className="page__content">
             <ul className="page__list">
               <li className="page__item">
-                - разрабатываем необходимые документы для организации;
+                • разрабатываем необходимые документы для организации;
               </li>
               <li className="page__item">
-                - готовим документы для рассмотрения дела в суде;
+                • готовим документы для рассмотрения дела в суде;
               </li>
               <li className="page__item">
-                - осуществляем совместный визит по делу, предоставляем защиту;
+                • осуществляем совместный визит по делу, предоставляем защиту;
               </li>
-              <li className="page__item">- составляем ходатайства;</li>
-              <li className="page__item">- обжалуем результаты проверки;</li>
+              <li className="page__item">• составляем ходатайства;</li>
+              <li className="page__item">• обжалуем результаты проверки;</li>
             </ul>
           </div>
           <br />

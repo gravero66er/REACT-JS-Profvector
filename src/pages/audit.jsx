@@ -26,20 +26,20 @@ export default function Audit() {
           <div className="page__content">
             <ul className="page__list">
               <li className="page__item">
-                - выявить нарушения на предприятии;
+                • выявить нарушения на предприятии;
               </li>
               <li className="page__item">
-                - подготовится к проверке Роспотребнадзора;
+                • подготовится к проверке Роспотребнадзора;
               </li>
-              <li className="page__item">- устранить выявленные нарушения.</li>
+              <li className="page__item">• устранить выявленные нарушения.</li>
             </ul>
           </div>
           <div className="page__subtitle">Сколько потребуется времени?</div>
           <div className="page__content">
             <ul className="page__list">
-              <li className="page__item">- 1 - 2 посещения специалиста;</li>
+              <li className="page__item">• 1-2 посещения специалиста;</li>
               <li className="page__item">
-                - составление отчета не более 3 дней.
+                • составление отчета не более 3 дней.
               </li>
             </ul>
           </div>
@@ -47,13 +47,13 @@ export default function Audit() {
           <div className="page__content">
             <ul className="page__list">
               <li className="page__item">
-                - письменный отчет с рекомендациями по устранению нарушений;
+                • письменный отчет с рекомендациями по устранению нарушений;
               </li>
               <li className="page__item">
-                - бесплатные консультации в течение одного месяца, после
+                • бесплатные консультации в течение одного месяца, после
                 проведения аудита;
               </li>
-              <li className="page__item">- уверенность в будущих проверках.</li>
+              <li className="page__item">• уверенность в будущих проверках.</li>
             </ul>
           </div>
           <br />

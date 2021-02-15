@@ -25,16 +25,16 @@ export default function Sto() {
           <div className="page__content">
             <ul className="page__list">
               <li className="page__item">
-                - нет необходимого ГОСТа для Вашей продукции;
+                • нет необходимого ГОСТа для Вашей продукции;
               </li>
               <li className="page__item">
-                - организация увеличивает срок годности выпускаемой продукции;
+                • организация увеличивает срок годности выпускаемой продукции;
               </li>
               <li className="page__item">
-                - используется новая потребительская упаковка;
+                • используется новая потребительская упаковка;
               </li>
               <li className="page__item">
-                - применяется новая технология изготовления продукции;
+                • применяется новая технология изготовления продукции;
               </li>
             </ul>
           </div>
@@ -44,10 +44,10 @@ export default function Sto() {
           </div>
           <div className="page__content">
             <ul className="page__list">
-              <li className="page__item">- реквизиты компании;</li>
-              <li className="page__item">- наименование продукции;</li>
-              <li className="page__item">- краткое описание производства;</li>
-              <li className="page__item">- содержание маркировки.</li>
+              <li className="page__item">• реквизиты компании;</li>
+              <li className="page__item">• наименование продукции;</li>
+              <li className="page__item">• краткое описание производства;</li>
+              <li className="page__item">• содержание маркировки.</li>
             </ul>
           </div>
           <div className="page__subtitle"></div>

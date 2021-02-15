@@ -24,45 +24,45 @@ export default function Hassp() {
           <div className="page__content">
             <ul className="page__list">
               <li className="page__item">
-                - предприятия общественного питания (рестораны, кафе, столовые,
+                • предприятия общественного питания (рестораны, кафе, столовые,
                 кофейни, кондитерские);
               </li>
               <li className="page__item">
-                - магазины розничной торговли с собственными цехами для
+                • магазины розничной торговли с собственными цехами для
                 приготовления блюд / полуфабрикатов;
               </li>
               <li className="page__item">
-                - производители алкогольных и безалкогольных напитков;
+                • производители алкогольных и безалкогольных напитков;
               </li>
               <li className="page__item">
-                - гостиничный бизнес, на территории которых имеется кухня;
+                • гостиничный бизнес, на территории которых имеется кухня;
               </li>
-              <li className="page__item">- и т. д.</li>
+              <li className="page__item">• и т. д.</li>
             </ul>
           </div>
           <div className="page__subtitle">От Вас:</div>
           <div className="page__content">
             <ul className="page__list">
-              <li className="page__item">- ассортимент продукции / меню;</li>
-              <li className="page__item">- список сотрудников;</li>
+              <li className="page__item">• ассортимент продукции / меню;</li>
+              <li className="page__item">• список сотрудников;</li>
               <li className="page__item">
-                - схема расположения производственных помещений;
+                • схема расположения производственных помещений;
               </li>
               <li className="page__item">
-                - список специализированного транспорта.
+                • список специализированного транспорта.
               </li>
             </ul>
           </div>
           <div className="page__subtitle">В результате:</div>
           <div className="page__content">
             <ul className="page__list">
-              <li className="page__item">- готовая документация ХАССП;</li>
-              <li className="page__item">- обучение персонала;</li>
+              <li className="page__item">• готовая документация ХАССП;</li>
+              <li className="page__item">• обучение персонала;</li>
               <li className="page__item">
-                - отсутствие штрафов со стороны контролирующих органов;
+                • отсутствие штрафов со стороны контролирующих органов;
               </li>
               <li className="page__item">
-                - отсутствие жалоб со стороны клиентов.
+                • отсутствие жалоб со стороны клиентов.
               </li>
             </ul>
           </div>

@@ -35,13 +35,13 @@ export default function Instrum() {
           <div className="page__subtitle">Обязательные инструкции:</div>
           <div className="page__content">
             <ul className="page__list">
-              <li className="page__item">- инструкция по мытью рук;</li>
-              <li className="page__item">- обработка яиц;</li>
-              <li className="page__item">- обработка овощей и зелени;</li>
-              <li className="page__item">- мытье столовой посуды;</li>
-              <li className="page__item">- мытье кухонного инвентаря;</li>
+              <li className="page__item">• инструкция по мытью рук;</li>
+              <li className="page__item">• обработка яиц;</li>
+              <li className="page__item">• обработка овощей и зелени;</li>
+              <li className="page__item">• мытье столовой посуды;</li>
+              <li className="page__item">• мытье кухонного инвентаря;</li>
               <li className="page__item">
-                - сними санитарную одежду (перед туалетом).
+                • сними санитарную одежду (перед туалетом).
               </li>
             </ul>
           </div>
@@ -49,33 +49,33 @@ export default function Instrum() {
           <div className="page__content">
             <ul className="page__list">
               <li className="page__item">
-                - инструкция по приготовлению рабочих растворов;
+                • инструкция по приготовлению рабочих растворов;
               </li>
               <li className="page__item">
-                - обработка среднетемпературного холодильного оборудования;
+                • обработка среднетемпературного холодильного оборудования;
               </li>
               <li className="page__item">
-                - обработка низкотемпературного холодильного оборудования;
+                • обработка низкотемпературного холодильного оборудования;
               </li>
-              <li className="page__item">- обработка щеток и ветоши;</li>
-              <li className="page__item">- правила текущей уборки;</li>
-              <li className="page__item">- правила генеральной уборки;</li>
-              <li className="page__item">- обработка уборочного инвентаря;</li>
+              <li className="page__item">• обработка щеток и ветоши;</li>
+              <li className="page__item">• правила текущей уборки;</li>
+              <li className="page__item">• правила генеральной уборки;</li>
+              <li className="page__item">• обработка уборочного инвентаря;</li>
               <li className="page__item">
-                - обработка емкостей для пищевых отходов;
+                • обработка емкостей для пищевых отходов;
               </li>
-              <li className="page__item">- правила приёмки товара;</li>
+              <li className="page__item">• правила приёмки товара;</li>
               <li className="page__item">
-                - мытьё и обработка оборотной тары;
+                • мытьё и обработка оборотной тары;
               </li>
-              <li className="page__item">- сроки хранения полуфабрикатов;</li>
-              <li className="page__item">- хранение хлеба;</li>
+              <li className="page__item">• сроки хранения полуфабрикатов;</li>
+              <li className="page__item">• хранение хлеба;</li>
               <li className="page__item">
-                - приготовление 3%-го раствора уксусной кислоты;
+                • приготовление 3%-го раствора уксусной кислоты;
               </li>
-              <li className="page__item">- правила личной гигиены</li>
+              <li className="page__item">• правила личной гигиены</li>
               <li className="page__item">
-                - обработка кондитерского инвентаря (для кондитерских цехов).
+                • обработка кондитерского инвентаря (для кондитерских цехов).
               </li>
             </ul>
           </div>
@@ -85,18 +85,18 @@ export default function Instrum() {
           <div className="page__content">
             <ul className="page__list">
               <li className="page__item">
-                - инструкция по уборка рабочих поверхностей и стен;
+                • инструкция по уборка рабочих поверхностей и стен;
               </li>
-              <li className="page__item">- обработка досок и ножей;</li>
+              <li className="page__item">• обработка досок и ножей;</li>
               <li className="page__item">
-                - обработка машины для нарезки овощей;
+                • обработка машины для нарезки овощей;
               </li>
               <li className="page__item">
-                - обработка оборудования для раскатки теста;
+                • обработка оборудования для раскатки теста;
               </li>
-              <li className="page__item">- обработка тестомесильной машины;</li>
-              <li className="page__item">- инструкция мытья печи;</li>
-              <li className="page__item">- уборка туалета.</li>
+              <li className="page__item">• обработка тестомесильной машины;</li>
+              <li className="page__item">• инструкция мытья печи;</li>
+              <li className="page__item">• уборка туалета.</li>
             </ul>
           </div>
           <br />

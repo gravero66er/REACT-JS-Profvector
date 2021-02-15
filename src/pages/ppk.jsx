@@ -24,27 +24,27 @@ export default function Instr() {
           <div className="page__content">
             <ul className="page__list">
               <li className="page__item">
-                - предприятиям торговли и общественного питания;
+                • предприятиям торговли и общественного питания;
               </li>
-              <li className="page__item">- медицинским учреждениям;</li>
-              <li className="page__item">- детским садам, школам;</li>
+              <li className="page__item">• медицинским учреждениям;</li>
+              <li className="page__item">• детским садам, школам;</li>
               <li className="page__item">
-                - предприятиям гостиничного бизнеса;
+                • предприятиям гостиничного бизнеса;
               </li>
               <li className="page__item">
-                - парикмахерским и салонам красоты;
+                • парикмахерским и салонам красоты;
               </li>
-              <li className="page__item">- аптекам;</li>
+              <li className="page__item">• аптекам;</li>
             </ul>
           </div>
           <div className="page__subtitle">От Вас:</div>
           <div className="page__content">
             <ul className="page__list">
-              <li className="page__item">- карточка предприятия;</li>
-              <li className="page__item">- ассортиментный перечень;</li>
-              <li className="page__item">- штатное расписание;</li>
+              <li className="page__item">• карточка предприятия;</li>
+              <li className="page__item">• ассортиментный перечень;</li>
+              <li className="page__item">• штатное расписание;</li>
               <li className="page__item">
-                - список производственного оборудования.
+                • список производственного оборудования.
               </li>
             </ul>
           </div>
@@ -52,14 +52,14 @@ export default function Instr() {
           <div className="page__content">
             <ul className="page__list">
               <li className="page__item">
-                - готовая ППК с графиком отбора проб, смывов с окружающей среды,
+                • готовая ППК с графиком отбора проб, смывов с окружающей среды,
                 физических факторов;
               </li>
               <li className="page__item">
-                - консультации по работе с документом;
+                • консультации по работе с документом;
               </li>
               <li className="page__item">
-                - отсутствие штрафов со стороны контролирующих органов.
+                • отсутствие штрафов со стороны контролирующих органов.
               </li>
             </ul>
           </div>

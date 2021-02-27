@@ -3,7 +3,7 @@ import Spinner from "../Blog/Spinner/spinner";
 
 const BlogPlug = () => {
     return (
-        <div id="blog" className="container">
+        <div className="container">
             <div className='block__title'>
                 <div className='line'></div>
                 <div className='title'>Блог</div>

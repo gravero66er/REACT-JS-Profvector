@@ -18,7 +18,7 @@ const Drop = styled.div`
 const settings = {
   spy: true,
   smooth: true,
-  offset: -20,
+  offset: -100,
   duration: 800,
 };
 
@@ -58,25 +58,31 @@ const HeaderMenu = ({ open }) => {
             <li className="drop__item">АУДИТ</li>
           </Link>
           <Link activeсlass="active" to="ros" {...settings}>
-            <li className="drop__item">САНИТАРНЫЕ ПАСПОРТА</li>
-          </Link>
-          <Link activeсlass="active" to="ros" {...settings}>
             <li className="drop__item">ЖУРНАЛЫ</li>
           </Link>
           <Link activeсlass="active" to="ros" {...settings}>
-            <li className="drop__item">ПОИМЕННЫЕ СПИСКИ</li>
+            <li className="drop__item">ИНСТРУКЦИИ</li>
           </Link>
           <Link activeсlass="active" to="ros" {...settings}>
-            <li className="drop__item">СТО ЛТУ</li>
+            <li className="drop__item">СТО</li>
           </Link>
-          <Link activeсlass="active" to="ros" {...settings}>
+          <Link activeсlass="active" to="ros2" {...settings}>
             <li className="drop__item">ЗАЩИТА В СУДЕ</li>
           </Link>
-          <Link activeсlass="active" to="ros" {...settings}>
+          <Link activeсlass="active" to="ros2" {...settings}>
+            <li className="drop__item">ПОИМЕННЫЕ СПИСКИ</li>
+          </Link>
+          <Link activeсlass="active" to="ros2" {...settings}>
             <li className="drop__item">ЛИЦЕНЗИЯ НА АЛКОГОЛЬ</li>
           </Link>
-          <Link activeсlass="active" to="ros" {...settings}>
+          <Link activeсlass="active" to="ros2" {...settings}>
             <li className="drop__item">КАНЦЕРОГЕННООПАСНЫЙ ПАСПОРТ</li>
+          </Link>
+          <Link activeсlass="active" to="ros2" {...settings}>
+            <li className="drop__item">ПРОЕКТИРОВАНИЕ</li>
+          </Link>
+          <Link activeсlass="active" to="ros2" {...settings}>
+            <li className="drop__item">СДАЧА ПРОБ</li>
           </Link>
         </ul>
       </Drop>

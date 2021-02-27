@@ -5,6 +5,7 @@ import Spinner from "./Spinner/spinner.jsx";
 import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
 import BlogFooter from "../Footer/blog__footer.jsx";
+import Blog from "../Blog/blog";
 
 const builder = imageUrlBuilder(sanityClien);
 function urlFor(source) {
@@ -81,6 +82,7 @@ function Singlepost() {
           />
         </div>
       </div>
+      <Blog />
       <BlogFooter />
     </div>
   );

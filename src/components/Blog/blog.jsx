@@ -39,7 +39,7 @@ function Blog() {
       <div className="blog">
         <div className="block__title">
           <div className="line"></div>
-          <div className="title">Блог</div>
+          <div className="title" id="blog">Блог</div>
           <div className="line"></div>
         </div>
         <Swiper

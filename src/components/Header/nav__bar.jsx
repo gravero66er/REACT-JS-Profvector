@@ -15,7 +15,6 @@ const NavBar = () => {
                         <a href="mailto:info@profvector.ru">info@profvector.ru</a>
                     </div>
                 </div>
-                <div className="contact__label"></div>
             </div>
             <div></div>
         </div>

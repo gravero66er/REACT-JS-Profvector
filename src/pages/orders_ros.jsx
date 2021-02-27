@@ -22,7 +22,7 @@ export default function OrdersRos() {
           </div>
           <div className="page__subtitle"></div>
           <div className="page__content">
-            Разработаем локально • нормативные акты для Вашей организации:
+            Разработаем локально - нормативные акты для Вашей организации:
             <div className="page__subtitle"></div>
             <ul className="page__list">
               <li className="page__item">• положение о службе охраны труда</li>

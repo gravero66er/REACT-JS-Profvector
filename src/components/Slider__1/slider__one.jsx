@@ -168,7 +168,7 @@ class SliderOne extends PureComponent {
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="slider__card" onClick={this.handleLaw}>
+                <div className="slider__card" id="ros2" onClick={this.handleLaw}>
                   <div className="slider__img slider__img-8"></div>
                   <div className="slider__title">ЗАЩИТА В СУДЕ</div>
                 </div>

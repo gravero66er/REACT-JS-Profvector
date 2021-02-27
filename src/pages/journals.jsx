@@ -13,7 +13,12 @@ export default function Journals() {
       <div className="page__wrapper">
         <div className="page">
           <div className="page__title">Журналы для общепита</div>
-          <div className="page__lead">Стоимость: 2 000 р.</div>
+          <div className="page__lead">
+            Разработка в соответствии с требованиями санитарных правил. <br />
+            Стоимость: 2 000 р.
+            <br />
+            Срок: 1 день.
+          </div>
           <div className="page__content">
             Журналы приобретаются один раз и пригодны для постоянного
             использования. Разработаны в соответствии с требованиями санитарных
@@ -32,9 +37,11 @@ export default function Journals() {
                 • журнал учета проверок юридического лица;
               </li>
               <li className="page__item">• журнал аварийных ситуаций;</li>
-              <li className="page__item">• гигиенический журнал (журнал здоровья + осмотра рук на гнойничковые заболевания);</li>
+              <li className="page__item">
+                • гигиенический журнал (журнал здоровья + осмотра рук на
+                гнойничковые заболевания);
+              </li>
               <li className="page__item">• бракеражный журнал;</li>
-              <li className="page__item">• санитарный журнал;</li>
               <li className="page__item">
                 • температурные листы холодильного оборудования;
               </li>

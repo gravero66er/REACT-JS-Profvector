@@ -43,7 +43,7 @@ const Header = () => {
               <div className="header__slide-content">
                 Разработка, внедрение системы ХАССП. Обучение.
                 <p>
-                  <span>Стоимость:</span> 40 т.р.
+                  <span>Стоимость:</span> 49 т.р.
                 </p>
                 <p>
                   <span>Срок:</span> от 1 до 4 недель

@@ -1,16 +1,16 @@
-import React, { useState } from "react";
-import styled from "styled-components";
-import { Link } from "react-scroll";
+import React, { useState } from 'react';
+import styled from 'styled-components';
+import { Link } from 'react-scroll';
 
 const Menu = styled.div`
   @media (max-width: 1024px) {
-    top: ${({ open }) => (open ? "-55px" : "-330px")};
-    opacity: ${({ open }) => (open ? "1" : "0")};
+    top: ${({ open }) => (open ? '-55px' : '-330px')};
+    opacity: ${({ open }) => (open ? '1' : '0')};
   }
 `;
 
 const Drop = styled.div`
-  transform: ${({ open }) => (open ? "translateX(0)" : "translateX(400%)")};
+  transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(400%)')};
 `;
 
 // Styled-components for dropout menu
@@ -45,6 +45,14 @@ const HeaderMenu = ({ open }) => {
         <Link activeсlass="active" to="blog" {...settings}>
           <div className="menu__item">БЛОГ</div>
         </Link>
+        <a
+          className="menu__item"
+          rel="noopener noreferrer"
+          href="https://docs.profvektor.ru"
+          target="_blank"
+        >
+          ДОКУМЕНТЫ
+        </a>
       </div>
       <Drop className="drop__menu" open={dropOne}>
         <ul className="drop__list">
@@ -74,9 +82,6 @@ const HeaderMenu = ({ open }) => {
           </Link>
           <Link activeсlass="active" to="ros2" {...settings}>
             <li className="drop__item">ЛИЦЕНЗИЯ НА АЛКОГОЛЬ</li>
-          </Link>
-          <Link activeсlass="active" to="ros2" {...settings}>
-            <li className="drop__item">КАНЦЕРОГЕННООПАСНЫЙ ПАСПОРТ</li>
           </Link>
           <Link activeсlass="active" to="ros2" {...settings}>
             <li className="drop__item">ПРОЕКТИРОВАНИЕ</li>

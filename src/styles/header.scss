@@ -22,7 +22,7 @@
   left: 0;
   width: 10px;
   height: 10px;
-  content: "";
+  content: '';
   text-align: center;
   opacity: 0.25;
   background-color: #000;
@@ -126,10 +126,10 @@
 }
 
 .header__menu {
-  width: 480px;
+  width: 570px;
   transition: all 0.3s ease-out;
   @media (max-width: 1200px) {
-    width: 350px;
+    width: 460px;
   }
   @media (max-width: 1024px) {
     width: 100%;
@@ -189,7 +189,7 @@
   width: 0; /*задаём длинну линии до наведения курсора*/
   height: 1px; /*задаём ширину линии*/
   background-color: #ffffff; /*задаём цвет линии*/
-  content: "";
+  content: '';
   transition: width 0.3s ease-out; /*задаём время анимации*/
   @media (max-width: 1025px) {
     display: none;
@@ -272,7 +272,7 @@
   width: 0; /*задаём длинну линии до наведения курсора*/
   height: 1px; /*задаём ширину линии*/
   background-color: #ffffff; /*задаём цвет линии*/
-  content: "";
+  content: '';
   transition: width 0.3s ease-out; /*задаём время анимации*/
 }
 
@@ -314,9 +314,9 @@ a:focus:after {
 // .links__item-w {
 //   background: url(../img/w.png) center/cover;
 // }
-// .links__item-t {
-//   background: url(../img/t.png) center/cover;
-// }
+.links__item-t {
+  background: url(../img/t.png) center/cover;
+}
 .links__item-v {
   background: url(../img/v.png) center/cover;
 }
@@ -326,6 +326,11 @@ a:focus:after {
 .links__item-f {
   background: url(../img/f.png) center/cover;
   height: 30px;
+}
+.links__item-ok {
+  background: url(../img/ok.png) center/cover;
+  height: 29px;
+  width: 21px;
 }
 
 .header__feedback {

@@ -1,21 +1,20 @@
-import React, { PureComponent } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation } from "swiper";
-import "swiper/swiper.scss";
-import "swiper/components/navigation/navigation.scss";
+import React, { PureComponent } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Navigation } from 'swiper';
+import 'swiper/swiper.scss';
+import 'swiper/components/navigation/navigation.scss';
 
-import Alcho from "../../pages/alcho";
-import Audit from "../../pages/audit";
-import Hassp from "../../pages/hassp";
-import Journals from "../../pages/journals";
-import Law from "../../pages/law";
-import Ppk from "../../pages/ppk";
-import Sto from "../../pages/sto";
-import Kpasssport from "../../pages/k_passport";
-import NameLists from "../../pages/name_lists";
-import Instruction from "../../pages/instruction";
-import Projects from "../../pages/projects";
-import Ready from "../../pages/ready";
+import Alcho from '../../pages/alcho';
+import Audit from '../../pages/audit';
+import Hassp from '../../pages/hassp';
+import Journals from '../../pages/journals';
+import Law from '../../pages/law';
+import Ppk from '../../pages/ppk';
+import Sto from '../../pages/sto';
+import NameLists from '../../pages/name_lists';
+import Instruction from '../../pages/instruction';
+import Projects from '../../pages/projects';
+import Ready from '../../pages/ready';
 
 class SliderOne extends PureComponent {
   constructor(props) {
@@ -27,65 +26,60 @@ class SliderOne extends PureComponent {
   }
 
   handlePpk = () => {
-      this.setState({
-        page: <Ppk />
-      })
-  }
+    this.setState({
+      page: <Ppk />,
+    });
+  };
   handleHassp = () => {
-      this.setState({
-        page: <Hassp />
-      })
-  }
+    this.setState({
+      page: <Hassp />,
+    });
+  };
   handleAudit = () => {
-      this.setState({
-        page: <Audit />
-      })
-  }
+    this.setState({
+      page: <Audit />,
+    });
+  };
   handleJour = () => {
-      this.setState({
-        page: <Journals />
-      })
-  }
+    this.setState({
+      page: <Journals />,
+    });
+  };
   handleInstr = () => {
-      this.setState({
-        page: <Instruction />
-      })
-  }
+    this.setState({
+      page: <Instruction />,
+    });
+  };
   handleSto = () => {
-      this.setState({
-        page: <Sto />
-      })
-  }
+    this.setState({
+      page: <Sto />,
+    });
+  };
   handleLaw = () => {
-      this.setState({
-        page: <Law />
-      })
-  }
+    this.setState({
+      page: <Law />,
+    });
+  };
   handleName = () => {
-      this.setState({
-        page: <NameLists />
-      })
-  }
+    this.setState({
+      page: <NameLists />,
+    });
+  };
   handleAlcho = () => {
-      this.setState({
-        page: <Alcho />
-      })
-  }
-  handlePass = () => {
-      this.setState({
-        page: <Kpasssport />
-      })
-  }
+    this.setState({
+      page: <Alcho />,
+    });
+  };
   handleProg = () => {
-      this.setState({
-        page: <Projects />
-      })
-  }
+    this.setState({
+      page: <Projects />,
+    });
+  };
   handleReady = () => {
-      this.setState({
-        page: <Ready />
-      })
-  }
+    this.setState({
+      page: <Ready />,
+    });
+  };
 
   render() {
     SwiperCore.use(Navigation);
@@ -98,12 +92,12 @@ class SliderOne extends PureComponent {
           <div className="slider">
             <Swiper
               navigation={{
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
               }}
               breakpoints={{
                 850: {
-                  direction: "vertical",
+                  direction: 'vertical',
                   slidesPerView: 11,
                   spaceBetween: 15,
                   autoplay: false,
@@ -168,7 +162,11 @@ class SliderOne extends PureComponent {
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="slider__card" id="ros2" onClick={this.handleLaw}>
+                <div
+                  className="slider__card"
+                  id="ros2"
+                  onClick={this.handleLaw}
+                >
                   <div className="slider__img slider__img-8"></div>
                   <div className="slider__title">ЗАЩИТА В СУДЕ</div>
                 </div>
@@ -185,12 +183,6 @@ class SliderOne extends PureComponent {
                 <div className="slider__card" onClick={this.handleAlcho}>
                   <div className="slider__img slider__img-9"></div>
                   <div className="slider__title">ЛИЦЕНЗИЯ НА АЛКОГОЛЬ</div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="slider__card" onClick={this.handlePass}>
-                  <div className="slider__img slider__img-10"></div>
-                  <div className="slider__title">КАНЦ. ПАСПОРТ</div>
                 </div>
               </SwiperSlide>
               <SwiperSlide>

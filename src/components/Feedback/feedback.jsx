@@ -1,11 +1,11 @@
-import React from "react";
-import { Link } from "react-scroll";
+import React from 'react';
+import { Link } from 'react-scroll';
 
 const settings = {
   spy: true,
   smooth: true,
   offset: -20,
-  duration: 800
+  duration: 800,
 };
 
 // Settings for react-scroll

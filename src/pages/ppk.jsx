@@ -16,7 +16,7 @@ export default function Instr() {
           <div className="page__lead">
             Программа производственного контроля
             <br />
-            Стоимость: 10 000 р.
+            Стоимость: 15 000 р.
             <br />
             Срок: 2 — 5 дней.
           </div>

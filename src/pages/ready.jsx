@@ -14,7 +14,7 @@ export default function Ready() {
         <div className="page">
           <div className="page__title">Подготовка к сдаче проб</div>
           <div className="page__lead">
-            Стоимость: 5 000 р. <br />
+            Стоимость: 10 000 р. <br />
             Срок: от 2 до 7 дней.
           </div>
           <div className="page__content"></div>

@@ -15,19 +15,19 @@ body {
   overflow: visible;
 }
 
-@import "fonts.sass";
-@import "reset.sass";
-@import "header.scss";
-@import "about.scss";
-@import "sliders.scss";
-@import "page.scss";
-@import "team.scss";
-@import "feedback.scss";
-@import "spinner.scss";
-@import "footer.scss";
-@import "blog.scss";
-@import "modal.scss";
-@import "singlepost.scss";
+@import 'fonts.sass';
+@import 'reset.sass';
+@import 'header.scss';
+@import 'about.scss';
+@import 'sliders.scss';
+@import 'page.scss';
+@import 'team.scss';
+@import 'feedback.scss';
+@import 'spinner.scss';
+@import 'footer.scss';
+@import 'blog.scss';
+@import 'modal.scss';
+@import 'singlepost.scss';
 
 .menu__button {
   position: absolute;

@@ -14,7 +14,6 @@
     "framer-motion": "^2.9.4",
     "git": "^0.1.5",
     "isomorphic-fetch": "^3.0.0",
-    "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.14.0",
     "react-router-dom": "^5.2.0",
@@ -46,5 +45,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "sass": "^1.54.9"
   }
 }
